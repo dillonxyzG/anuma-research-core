@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Living Intelligence Systems — Anuma Research</title>
+
+  <meta name="description"
+        content="Living Intelligence Systems: an Anuma research framework for investigating intelligence across networks, relationships, emergence, biological systems, technological systems and civilization.">
+
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <style>
+    .research-page {
+      padding: 110px 8% 90px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .research-label {
+      color: #c7a44a;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      margin-bottom: 18px;
+    }
+
+    .research-page h1 {
+      font-size: clamp(2.7rem, 6vw, 5.2rem);
+      line-height: 1.02;
+      margin-bottom: 25px;
+    }
+
+    .research-page h2 {
+      margin-top: 70px;
+      margin-bottom: 20px;
+      color: #d6b65a;
+      font-size: 1.65rem;
+    }
+
+    .research-page h3 {
+      margin-top: 30px;
+      margin-bottom: 12px;
+      color: #eee;
+    }
+
+    .lead {
+      max-width: 850px;
+      font-size: 1.15rem;
+      line-height: 1.9;
+      color: #cfcfcf;
+    }
+
+    .research-block {
+      margin-top: 30px;
+      padding: 30px;
+      border: 1px solid rgba(199, 164, 74, 0.22);
+      background: rgba(255,255,255,0.025);
+    }
+
+    .research-block p,
+    .research-block li {
+      color: #c8c8c8;
+      line-height: 1.85;
+    }
+
+    .equation {
+      margin: 28px 0;
+      padding: 24px;
+      overflow-x: auto;
+      text-align: center;
+      border-left: 3px solid #c7a44a;
+      background: #090909;
+      color: #e2c56c;
+      font-size: 1.15rem;
+      letter-spacing: 0.02em;
+    }
+
+    .equation code {
+      font-family: "Courier New", monospace;
+      white-space: nowrap;
+    }
+
+    .definition-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .definition {
+      padding: 22px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.02);
+    }
+
+    .definition strong {
+      display: block;
+      color: #d6b65a;
+      margin-bottom: 8px;
+    }
+
+    .central-question {
+      margin: 35px 0;
+      padding: 35px 30px;
+      text-align: center;
+      border-top: 1px solid rgba(199,164,74,0.4);
+      border-bottom: 1px solid rgba(199,164,74,0.4);
+      background: rgba(199,164,74,0.035);
+    }
+
+    .question-label {
+      color: #c7a44a;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .question-text {
+      font-size: clamp(1.25rem, 3vw, 1.9rem);
+      line-height: 1.5;
+      color: #eee;
+    }
+
+    .hypothesis {
+      border-left: 3px solid #c7a44a;
+      padding: 22px 25px;
+      margin: 28px 0;
+      background: rgba(199,164,74,0.05);
+    }
+
+    .positioning {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .position-card {
+      padding: 25px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .position-card h3 {
+      color: #d6b65a;
+      margin-top: 0;
+    }
+
+    .scale {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .scale-item {
+      padding: 20px 12px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #ccc;
+    }
+
+    .scale-item strong {
+      display: block;
+      color: #d6b65a;
+      margin-bottom: 8px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 55px;
+      color: #d6b65a;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 850px) {
+      .scale {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .definition-grid,
+      .positioning,
+      .scale {
+        grid-template-columns: 1fr;
+      }
+
+      .research-page {
+        padding: 90px 6% 70px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ANUMA</div>
+
+  <nav>
+    <a href="../../index.html">Research</a>
+    <a href="../../core/ANUMA-RTT-001.html">Core</a>
+    <a href="../../index.html#systems">Systems</a>
+    <a href="../../index.html#about">About</a>
+  </nav>
+</header>
+
+
+<main class="research-page">
+
+  <div class="research-label">
+    Anuma Research · Networked Intelligence
+  </div>
+
+  <h1>
+    Living<br>
+    Intelligence Systems
+  </h1>
+
+  <p class="lead">
+    A research framework for investigating intelligence as an evolving
+    property of interacting systems, relationships, networks and
+    environments.
+  </p>
+
+
+  <!-- CENTRAL QUESTION -->
+
+  <section>
+
+    <div class="central-question">
+
+      <div class="question-label">
+        Central Research Question
+      </div>
+
+      <div class="question-text">
+        Can intelligence emerge not only from individual components,
+        but from the relationships and interactions that connect them?
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SYSTEM VIEW -->
+
+  <section>
+
+    <h2>01 — From Intelligent Systems to Living Systems</h2>
+
+    <div class="research-block">
+
+      <p>
+        The Anuma framework begins with an intelligent system represented
+        by state, relationships, memory, context and agency:
+      </p>
+
+      <div class="equation">
+        <code>
+          𝒮ₜ = (Xₜ, Rₜ, Mₜ, Cₜ, Aₜ)
+        </code>
+      </div>
+
+      <p>
+        The Living Intelligence Systems extension asks what happens when
+        multiple such systems interact continuously.
+      </p>
+
+      <div class="equation">
+        <code>
+          𝒮₁ ↔ 𝒮₂ ↔ 𝒮₃ ↔ ... ↔ 𝒮ₙ
+        </code>
+      </div>
+
+      <p>
+        The focus therefore shifts from isolated system behaviour toward
+        the structure and dynamics of relationships among systems.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- NETWORK -->
+
+  <section>
+
+    <h2>02 — Network Representation</h2>
+
+    <div class="research-block">
+
+      <p>
+        A network can be represented mathematically as:
+      </p>
+
+      <div class="equation">
+        <code>
+          G = (V, E, W)
+        </code>
+      </div>
+
+      <div class="definition-grid">
+
+        <div class="definition">
+          <strong>V — Nodes</strong>
+          Entities, agents, systems, organisms or other distinguishable
+          components.
+        </div>
+
+        <div class="definition">
+          <strong>E — Edges</strong>
+          Relationships or interactions connecting components.
+        </div>
+
+        <div class="definition">
+          <strong>W — Weights</strong>
+          Values representing the strength or significance assigned to
+          relationships.
+        </div>
+
+        <div class="definition">
+          <strong>G — Network</strong>
+          The resulting relational structure.
+        </div>
+
+      </div>
+
+      <p>
+        Within a living intelligence system, this structure may evolve
+        as interactions change.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- EVOLVING NETWORK -->
+
+  <section>
+
+    <h2>03 — The Evolving Relational Structure</h2>
+
+    <div class="research-block">
+
+      <p>
+        Relationships are not necessarily static.
+      </p>
+
+      <div class="equation">
+        <code>
+          Rₜ → Rₜ₊₁
+        </code>
+      </div>
+
+      <p>
+        An interaction can modify the relationship itself, creating a
+        feedback process in which the network influences its components
+        while the components simultaneously influence the network.
+      </p>
+
+      <div class="equation">
+        <code>
+          System ↔ Relationship ↔ Environment
+        </code>
+      </div>
+
+      <p>
+        This recursive structure is central to the concept of a living
+        intelligence system.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- EMERGENCE -->
+
+  <section>
+
+    <h2>04 — Emergent Intelligence</h2>
+
+    <div class="research-block">
+
+      <p>
+        The framework proposes that system-level intelligence may contain
+        contributions that are not adequately represented by summing the
+        capabilities of isolated components.
+      </p>
+
+      <div class="equation">
+        <code>
+          I<sub>system</sub> =
+          ΣI<sub>i</sub>
+          +
+          I<sub>relations</sub>
+          +
+          I<sub>emergence</sub>
+        </code>
+      </div>
+
+      <div class="definition-grid">
+
+        <div class="definition">
+          <strong>ΣIᵢ</strong>
+          Contributions from individual components.
+        </div>
+
+        <div class="definition">
+          <strong>I<sub>relations</sub></strong>
+          Contribution associated with relationships among components.
+        </div>
+
+        <div class="definition">
+          <strong>I<sub>emergence</sub></strong>
+          Proposed system-level contribution arising from interaction
+          and organization.
+        </div>
+
+        <div class="definition">
+          <strong>I<sub>system</sub></strong>
+          Proposed representation of total system-level intelligence.
+        </div>
+
+      </div>
+
+      <p>
+        This is a proposed modelling framework. The existence,
+        magnitude and measurability of such emergent contributions are
+        empirical questions.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- DISTRIBUTED COGNITION -->
+
+  <section>
+
+    <h2>05 — Distributed Intelligence</h2>
+
+    <div class="research-block">
+
+      <p>
+        Intelligence does not necessarily have to be located in one
+        central computational unit.
+      </p>
+
+      <div class="equation">
+        <code>
+          Intelligence = Distributed Across Relationships
+        </code>
+      </div>
+
+      <p>
+        In a distributed system, different nodes can hold different
+        information, capabilities and local states while the network
+        provides the structure through which these components interact.
+      </p>
+
+      <p>
+        The Anuma framework investigates whether such distributed
+        relational structures can produce measurable forms of
+        coordination and adaptation.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- BIOLOGICAL -->
+
+  <section>
+
+    <h2>06 — Biological Systems</h2>
+
+    <div class="research-block">
+
+      <p>
+        The living-intelligence framework is intentionally broader than
+        artificial computation.
+      </p>
+
+      <p>
+        Biological systems can be investigated as networks of
