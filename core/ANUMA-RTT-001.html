@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ANUMA-RTT-001 — Research Core</title>
+
+    <meta name="description"
+          content="ANUMA Research Core — Independent Research Identity ANUMA-RTT-001.">
+
+    <!-- IMPORTANT:
+         Because this page is inside /core/,
+         the stylesheet is two levels up from here. -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+
+        /* =====================================================
+           RESEARCH CORE PAGE
+           ===================================================== */
+
+        .core-hero {
+            padding: 120px 0 90px;
+
+            border-bottom:
+                1px solid rgba(201, 162, 77, 0.20);
+
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(201, 162, 77, 0.10),
+                    transparent 35%
+                ),
+                #070707;
+        }
+
+
+        .core-identity {
+            display: grid;
+
+            grid-template-columns:
+                1.5fr 0.5fr;
+
+            gap: 70px;
+
+            align-items: end;
+        }
+
+
+        .core-title {
+            margin-top: 20px;
+
+            color: #f2efe7;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size:
+                clamp(48px, 7vw, 82px);
+
+            font-weight: 400;
+
+            line-height: 1.02;
+
+            letter-spacing: -0.04em;
+        }
+
+
+        .core-subtitle {
+            max-width: 720px;
+
+            margin-top: 30px;
+
+            color: #bcb8af;
+
+            font-size: 19px;
+
+            line-height: 1.8;
+        }
+
+
+        .credential {
+            padding: 30px;
+
+            border:
+                1px solid rgba(201, 162, 77, 0.35);
+
+            background:
+                rgba(201, 162, 77, 0.035);
+        }
+
+
+        .credential-label {
+            color: #c9a24d;
+
+            font-size: 10px;
+
+            letter-spacing: 0.18em;
+
+            text-transform: uppercase;
+        }
+
+
+        .credential-id {
+            margin-top: 15px;
+
+            color: #e1c56f;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 25px;
+        }
+
+
+        .credential-status {
+            margin-top: 18px;
+
+            color: #8e8a80;
+
+            font-size: 12px;
+
+            line-height: 1.6;
+        }
+
+
+        /* ---------- IDENTITY ---------- */
+
+        .identity-section {
+            padding: 90px 0;
+
+            border-bottom:
+                1px solid rgba(201, 162, 77, 0.14);
+        }
+
+
+        .identity-grid {
+            display: grid;
+
+            grid-template-columns:
+                0.8fr 1.2fr;
+
+            gap: 80px;
+        }
+
+
+        .identity-name {
+            margin-top: 18px;
+
+            color: #f2efe7;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 42px;
+
+            font-weight: 400;
+
+            line-height: 1.15;
+        }
+
+
+        .identity-role {
+            margin-top: 18px;
+
+            color: #c9a24d;
+
+            font-size: 13px;
+
+            letter-spacing: 0.08em;
+        }
+
+
+        .identity-description {
+            margin-top: 25px;
+
+            color: #8e8a80;
+
+            font-size: 15px;
+        }
+
+
+        .identity-record {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 1px;
+
+            background:
+                rgba(201, 162, 77, 0.15);
+
+            border:
+                1px solid rgba(201, 162, 77, 0.15);
+        }
+
+
+        .record-item {
+            padding: 25px;
+
+            background: #111111;
+        }
+
+
+        .record-item small {
+            display: block;
+
+            color: #8e8a80;
+
+            font-size: 10px;
+
+            letter-spacing: 0.14em;
+
+            text-transform: uppercase;
+        }
+
+
+        .record-item strong {
+            display: block;
+
+            margin-top: 10px;
+
+            color: #f2efe7;
+
+            font-size: 14px;
+
+            font-weight: 500;
+        }
+
+
+        /* ---------- PROPOSITION ---------- */
+
+        .proposition-section {
+            padding: 120px 0;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #0b0b0b,
+                    #101010
+                );
+
+            border-bottom:
+                1px solid rgba(201, 162, 77, 0.14);
+        }
+
+
+        .proposition {
+            max-width: 950px;
+
+            margin: 55px auto 0;
+
+            padding: 65px;
+
+            border-top:
+                1px solid rgba(201, 162, 77, 0.45);
+
+            border-bottom:
+                1px solid rgba(201, 162, 77, 0.20);
+
+            text-align: center;
+        }
+
+
+        .proposition blockquote {
+            color: #e1c56f;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size:
+                clamp(30px, 4vw, 52px);
+
+            font-weight: 400;
+
+            line-height: 1.25;
+        }
+
+
+        .proposition-note {
+            margin-top: 25px;
+
+            color: #8e8a80;
+
+            font-size: 13px;
+        }
+
+
+        /* ---------- RESEARCH DOMAINS ---------- */
+
+        .domains-section {
+            padding: 110px 0;
+
+            border-bottom:
+                1px solid rgba(201, 162, 77, 0.14);
+        }
+
+
+        .domains-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 1px;
+
+            margin-top: 55px;
+
+            background:
+                rgba(201, 162, 77, 0.15);
+
+            border:
+                1px solid rgba(201, 162, 77, 0.15);
+        }
+
+
+        .domain {
+            min-height: 250px;
+
+            padding: 35px;
+
+            background: #111111;
+        }
+
+
+        .domain-number {
+            color: #8e6d2d;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 14px;
+        }
+
+
+        .domain h3 {
+            margin-top: 28px;
+
+            color: #f2efe7;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 25px;
+
+            font-weight: 400;
+        }
+
+
+        .domain p {
+            margin-top: 15px;
+
+            color: #8e8a80;
+
+            font-size: 14px;
+        }
+
+
+        /* ---------- FRAMEWORK STATUS ---------- */
+
+        .status-section {
+            padding: 110px 0;
+
+            background: #080808;
+
+            border-bottom:
+                1px solid rgba(201, 162, 77, 0.14);
+        }
+
+
+        .status-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 1px;
+
+            margin-top: 55px;
+
+            background:
+                rgba(201, 162, 77, 0.15);
+        }
+
+
+        .status-card {
+            padding: 35px;
+
+            background: #111111;
+        }
+
+
+        .status-card h3 {
+            color: #e1c56f;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 22px;
+
+            font-weight: 400;
+        }
+
+
+        .status-card p {
+            margin-top: 17px;
+
+            color: #8e8a80;
+
+            font-size: 14px;
+        }
+
+
+        /* ---------- SYSTEM MODEL ---------- */
+
+        .model-section {
+            padding: 110px 0;
+
+            border-bottom:
+                1px solid rgba(201, 162, 77, 0.14);
+        }
+
+
+        .equation {
+            max-width: 900px;
+
+            margin: 50px auto 0;
+
+            padding: 40px;
+
+            border:
+                1px solid rgba(201, 162, 77, 0.25);
+
+            background: #0e0e0e;
+
+            text-align: center;
+
+            overflow-x: auto;
+        }
+
+
+        .equation code {
+            color: #e1c56f;
+
+            font-family:
+                "Courier New",
+                monospace;
+
+            font-size:
+                clamp(16px, 2vw, 22px);
+
+            white-space: nowrap;
+        }
+
+
+        .model-note {
+            max-width: 800px;
+
+            margin: 25px auto 0;
+
+            color: #8e8a80;
+
+            font-size: 14px;
+
+            text-align: center;
+        }
+
+
+        /* ---------- VERIFICATION ---------- */
+
+        .verification-section {
+            padding: 110px 0;
+
+            background:
+                radial-gradient(
+                    circle at 50% 50%,
+                    rgba(201, 162, 77, 0.06),
+                    transparent 45%
+                );
+        }
+
+
+        .verification-box {
+            max-width: 850px;
+
+            margin-top: 50px;
+
+            padding: 40px;
+
+            border:
+                1px solid rgba(201, 162, 77, 0.28);
+        }
+
+
+        .verification-box p {
+            color: #bcb8af;
+
+            font-size: 15px;
+        }
+
+
+        .verification-code {
+            margin-top: 25px;
+
+            padding: 18px;
+
+            background: #050505;
+
+            color: #e1c56f;
+
+            font-family:
+                "Courier New",
+                monospace;
+
+            font-size: 13px;
+
+            letter-spacing: 0.08em;
+        }
+
+
+        .disclaimer {
+            margin-top: 35px;
+
+            color: #68645d;
+
+            font-size: 11px;
+
+            line-height: 1.7;
+        }
+
+
+        /* ---------- RESPONSIVE ---------- */
+
+        @media (max-width: 850px) {
+
+            .core-identity {
+                grid-template-columns: 1fr;
+            }
+
+
+            .identity-grid {
+                grid-template-columns: 1fr;
+
+                gap: 50px;
+            }
+
+
+            .status-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .proposition {
+                padding: 40px 25px;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .core-hero {
+                padding: 85px 0 65px;
+            }
+
+
+            .identity-section,
+            .domains-section,
+            .status-section,
+            .model-section,
+            .verification-section {
+                padding: 80px 0;
+            }
+
+
+            .domains-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .identity-record {
+                grid-template-columns: 1fr;
+            }
+
+
+            .credential {
+                padding: 25px;
+            }
+
+
+            .equation {
+                padding: 25px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <div class="container nav">
+
+            <a href="../index.html" class="logo">
+                ANUMA
+            </a>
+
+            <nav>
+
+                <a href="../index.html">
+                    Research
+                </a>
+
+                <a href="#identity">
+                    Identity
+                </a>
+
+                <a href="#framework">
+                    Framework
+                </a>
+
+                <a href="#verification">
+                    Verification
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <main>
+
+        <section class="core-hero">
+
+            <div class="container core-identity">
+
+                <div>
+
+                    <p class="section-label">
+                        ANUMA · INDEPENDENT RESEARCH CORE
+                    </p>
+
+                    <h1 class="core-title">
+                        Research<br>
+                        Identity
+                    </h1>
+
+                    <p class="core-subtitle">
+                        A persistent research identity connecting
+                        theoretical frameworks, mathematical models,
+                        experimental systems, lectures, publications
+                        and future research development.
+                    </p>
+
+                </div>
+
+
+                <div class="credential">
+
+                    <p class="credential-label">
+                        Research Identification
+                    </p>
+
+                    <div class="credential-id">
+                        ANUMA-RTT-001
+                    </div>
+
+                    <p class="credential-status">
+                        Independent Research Identity Credential
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             IDENTITY
+             ================================================= -->
+
+        <section
+            id="identity"
+            class="identity-section">
+
+            <div class="container identity-grid">
+
+                <div>
+
+                    <p class="section-label">
+                        01 · RESEARCHER
+                    </p>
+
+                    <h2 class="identity-name">
+                        Sean Adegunloye Esan
+                    </h2>
+
+                    <p class="identity-role">
+                        Polymath Researcher · Systems Architect · Inventor
+                    </p>
+
+                    <p class="identity-description">
+                        Founder — Anuma | Existential OS
+                        <br>
+                        Originator — Resonance Transformation Theory
+                    </p>
+
+                </div>
+
+
+                <div class="identity-record">
+
+                    <div class="record-item">
+
+                        <small>
+                            Research ID
+                        </small>
+
+                        <strong>
+                            ANUMA-RTT-001
+                        </strong>
+
+                    </div>
+
+
+                    <div class="record-item">
+
+                        <small>
+                            Research Programme
+                        </small>
+
+                        <strong>
+                            ANUMA
+                        </strong>
+
+                    </div>
+
+
+                    <div class="record-item">
+
+                        <small>
+                            Primary Framework
+                        </small>
+
+                        <strong>
+                            Resonance Transformation Theory
+                        </strong>
+
+                    </div>
+
+
+                    <div class="record-item">
+
+                        <small>
+                            System Orientation
+                        </small>
+
+                        <strong>
+                            Relational · Contextual · Evolving
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CORE PROPOSITION
+             ================================================= -->
+
+        <section class="proposition-section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    02 · CORE PROPOSITION
+                </p>
+
+                <h2>
+                    From transaction to relationship
+                </h2>
+
+
+                <div class="proposition">
+
+                    <blockquote>
+                        “Transactions execute actions;
+                        relationships construct intelligence.”
+                    </blockquote>
+
+                    <p class="proposition-note">
+                        Foundational proposition of the
+                        Transactional–Relational Intelligence framework.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RESEARCH DOMAINS
+             ================================================= -->
+
+        <section class="domains-section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    03 · RESEARCH DOMAINS
+                </p>
+
+                <h2>
+                    The ANUMA research programme
+                </h2>
+
+
+                <div class="domains-grid">
+
+
+                    <article class="domain">
+
+                        <span class="domain-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Resonance Transformation Theory
+                        </h3>
+
+                        <p>
+                            A proposed mathematical framework examining
+                            transformation through relational structure,
+                            context, resonance and evolving system state.
+                        </p>
+
+                    </article>
+
+
+                    <article class="domain">
+
+                        <span class="domain-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Transactional–Relational Intelligence
+                        </h3>
+
+                        <p>
+                            A framework distinguishing immediate
+                            transaction and execution from relational
+                            structures involving continuity, context,
+                            memory and meaning.
+                        </p>
+
+                    </article>
+
+
+                    <article class="domain">
+
+                        <span class="domain-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Existential Intelligence
+                        </h3>
+
+                        <p>
+                            A proposed operational framework involving
+                            context, memory, relationships and agency.
+                        </p>
+
+                    </article>
+
+
+                    <article class="domain">
+
+                        <span class="domain-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Living Intelligence Systems
+                        </h3>
+
+                        <p>
+                            Research into distributed systems,
+                            relational structure, emergence and
+                            intelligence across connected entities.
+                        </p>
+
+                    </article>
+
+
+                    <article class="domain">
+
+                        <span class="domain-number">
+                            05
+                        </span>
+
+                        <h3>
+                            Ambient Computing
+                        </h3>
+
+                        <p>
+                            Exploration of computing architectures in
+                            which sensing, interaction and intelligence
+                            become embedded within environments.
+                        </p>
+
+                    </article>
+
+
+                    <article class="domain">
+
+                        <span class="domain-number">
+                            06
+                        </span>
+
+                        <h3>
+                            Anuma Learning Station
+                        </h3>
+
+                        <p>
+                            An experimental physical platform connecting
+                            environmental sensing, learning,
+                            participation and relational intelligence.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FRAMEWORK STATUS
+             ================================================= -->
+
+        <section
+            id="framework"
+            class="status-section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    04 · SCIENTIFIC POSITIONING
+                </p>
+
+                <h2>
+                    Framework status
+                </h2>
+
+                <p class="section-intro">
+                    The ANUMA research programme distinguishes
+                    established scientific foundations from proposed
+                    theoretical constructs and hypotheses requiring
+                    empirical testing.
+                </p>
+
+
+                <div class="status-grid">
+
+
+                    <article class="status-card">
+
+                        <h3>
+                            Established Science
+                        </h3>
+
+                        <p>
+                            The programme draws from established areas
+                            including network science, complex systems,
+                            information theory, distributed cognition,
+                            multi-agent systems and machine learning.
+                        </p>
+
+                    </article>
+
+
+                    <article class="status-card">
+
+                        <h3>
+                            Proposed Framework
+                        </h3>
+
+                        <p>
+                            Resonance Transformation Theory,
+                            Transactional–Relational Intelligence and
+                            Existential Intelligence are presented as
+                            proposed research frameworks.
+                        </p>
+
+                    </article>
+
+
+                    <article class="status-card">
+
+                        <h3>
+                            Testable Hypotheses
+                        </h3>
+
+                        <p>
+                            The programme proposes experimental
+                            comparisons between transactional and
+                            relational models to investigate whether
+                            relational structure contributes measurable
+                            predictive or transformational effects.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MATHEMATICAL MODEL
+             ================================================= -->
+
+        <section class="model-section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    05 · FORMAL SYSTEM MODEL
+                </p>
+
+                <h2>
+                    Intelligence as an evolving system
+                </h2>
+
+                <p class="section-intro">
+                    The research framework represents an intelligent
+                    system through state, relational structure, memory,
+                    context and agency.
+                </p>
+
+
+                <div class="equation">
+
+                    <code>
+                        Sₜ = (Xₜ, Rₜ, Mₜ, Cₜ, Aₜ)
+                    </code>
+
+                </div>
+
+
+                <p class="model-note">
+                    Where X represents system state, R relational
+                    structure, M memory, C context and A agency.
+                </p>
+
+
+                <div class="equation">
+
+                    <code>
+                        Sₜ₊₁ = F(Xₜ, Rₜ, Mₜ, Cₜ, Aₜ, ρₜ)
+                    </code>
+
+                </div>
+
+
+                <p class="model-note">
+                    The extended formulation introduces resonance
+                    as a transformation variable within the evolving
+                    system.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             VERIFICATION
+             ================================================= -->
+
+        <section
+            id="verification"
+            class="verification-section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    06 · VERIFICATION
+                </p>
+
+                <h2>
+                    Research identity verification
+                </h2>
+
+                <div class="verification-box">
+
+                    <p>
+                        This page serves as the public research record
+                        associated with the identifier:
+                    </p>
+
+
+                    <div class="verification-code">
+                        ANUMA-RTT-001
+                    </div>
+
+
+                    <p class="disclaimer">
+                        This credential represents an independent
+                        research identity and archive. It is not a
+                        university identification card, government
+                        identification document, professional licence,
+                        academic degree or institutional appointment.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+
+                <strong>
+                    ANUMA
+                </strong>
+
+                <p>
+                    Independent Research Core
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    Researching intelligence across
+                    relationship, context and transformation.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <p>
+                ANUMA-RTT-001 · Independent Research Identity
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
