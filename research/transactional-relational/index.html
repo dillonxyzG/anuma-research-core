@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Transactional–Relational Intelligence — Anuma Research</title>
+
+  <meta name="description"
+        content="Transactional–Relational Intelligence: a research framework investigating the relationship between transaction, context, memory, continuity and intelligence.">
+
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <style>
+    .research-page {
+      padding: 110px 8% 90px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .research-label {
+      color: #c7a44a;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      margin-bottom: 18px;
+    }
+
+    .research-page h1 {
+      font-size: clamp(2.7rem, 6vw, 5.2rem);
+      line-height: 1.02;
+      margin-bottom: 25px;
+    }
+
+    .research-page h2 {
+      margin-top: 70px;
+      margin-bottom: 20px;
+      color: #d6b65a;
+      font-size: 1.65rem;
+    }
+
+    .research-page h3 {
+      margin-top: 30px;
+      margin-bottom: 12px;
+      color: #eee;
+    }
+
+    .lead {
+      max-width: 850px;
+      font-size: 1.15rem;
+      line-height: 1.9;
+      color: #cfcfcf;
+    }
+
+    .research-block {
+      margin-top: 30px;
+      padding: 30px;
+      border: 1px solid rgba(199, 164, 74, 0.22);
+      background: rgba(255,255,255,0.025);
+    }
+
+    .research-block p,
+    .research-block li {
+      color: #c8c8c8;
+      line-height: 1.85;
+    }
+
+    .equation {
+      margin: 28px 0;
+      padding: 24px;
+      overflow-x: auto;
+      text-align: center;
+      border-left: 3px solid #c7a44a;
+      background: #090909;
+      color: #e2c56c;
+      font-size: 1.15rem;
+      letter-spacing: 0.02em;
+    }
+
+    .equation code {
+      font-family: "Courier New", monospace;
+      white-space: nowrap;
+    }
+
+    .definition-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .definition {
+      padding: 22px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.02);
+    }
+
+    .definition strong {
+      display: block;
+      color: #d6b65a;
+      margin-bottom: 8px;
+    }
+
+    .principle {
+      margin: 35px 0;
+      padding: 35px 30px;
+      text-align: center;
+      border-top: 1px solid rgba(199,164,74,0.4);
+      border-bottom: 1px solid rgba(199,164,74,0.4);
+      background: rgba(199,164,74,0.035);
+    }
+
+    .principle-title {
+      color: #c7a44a;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .principle-text {
+      font-size: clamp(1.3rem, 3vw, 2rem);
+      line-height: 1.5;
+      color: #eee;
+    }
+
+    .comparison {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 25px;
+    }
+
+    .comparison th,
+    .comparison td {
+      padding: 17px;
+      border: 1px solid rgba(255,255,255,0.08);
+      text-align: left;
+      vertical-align: top;
+      line-height: 1.65;
+    }
+
+    .comparison th {
+      color: #d6b65a;
+      font-weight: 500;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .hypothesis {
+      border-left: 3px solid #c7a44a;
+      padding: 22px 25px;
+      margin: 28px 0;
+      background: rgba(199,164,74,0.05);
+    }
+
+    .positioning {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .position-card {
+      padding: 25px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .position-card h3 {
+      color: #d6b65a;
+      margin-top: 0;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 55px;
+      color: #d6b65a;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 760px) {
+      .definition-grid,
+      .positioning {
+        grid-template-columns: 1fr;
+      }
+
+      .comparison {
+        display: block;
+        overflow-x: auto;
+      }
+
+      .research-page {
+        padding: 90px 6% 70px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ANUMA</div>
+
+  <nav>
+    <a href="../../index.html">Research</a>
+    <a href="../../core/ANUMA-RTT-001.html">Core</a>
+    <a href="../../index.html#systems">Systems</a>
+    <a href="../../index.html#about">About</a>
+  </nav>
+</header>
+
+
+<main class="research-page">
+
+  <div class="research-label">
+    Anuma Research · Intelligence Architecture
+  </div>
+
+  <h1>
+    Transactional–Relational<br>
+    Intelligence
+  </h1>
+
+  <p class="lead">
+    A research framework for distinguishing intelligence expressed
+    through immediate transactions from intelligence emerging through
+    relationships, memory, context, continuity and adaptation.
+  </p>
+
+
+  <!-- CENTRAL PRINCIPLE -->
+
+  <section>
+
+    <div class="principle">
+
+      <div class="principle-title">
+        Central Principle
+      </div>
+
+      <div class="principle-text">
+        Transactions execute actions;<br>
+        relationships construct intelligence.
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- RESEARCH QUESTION -->
+
+  <section>
+
+    <h2>01 — Research Question</h2>
+
+    <div class="research-block">
+
+      <p>
+        Many computational and organizational systems are designed
+        primarily around transactions: an input is received, an operation
+        is performed, and an output is produced.
+      </p>
+
+      <p>
+        The Transactional–Relational Intelligence framework asks a
+        different question:
+      </p>
+
+      <div class="hypothesis">
+        <strong>
+          What changes when intelligence is understood not only as
+          successful transaction, but as the development of relationships
+          across time?
+        </strong>
+      </div>
+
+      <p>
+        The framework therefore investigates transaction, relationship,
+        memory and context as distinguishable components of intelligent
+        behaviour.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- TRANSACTION -->
+
+  <section>
+
+    <h2>02 — Transactional Mode</h2>
+
+    <div class="research-block">
+
+      <p>
+        Transactional intelligence concerns exchange, execution and
+        immediate output.
+      </p>
+
+      <table class="comparison">
+
+        <tr>
+          <th>Dimension</th>
+          <th>Transactional Mode</th>
+        </tr>
+
+        <tr>
+          <td>Primary function</td>
+          <td>Exchange or execution</td>
+        </tr>
+
+        <tr>
+          <td>Temporal orientation</td>
+          <td>Immediate result</td>
+        </tr>
+
+        <tr>
+          <td>Context</td>
+          <td>May be limited to the current interaction</td>
+        </tr>
+
+        <tr>
+          <td>Memory</td>
+          <td>May be minimal or external to the transaction</td>
+        </tr>
+
+        <tr>
+          <td>Relationship</td>
+          <td>Not necessarily required for successful execution</td>
+        </tr>
+
+        <tr>
+          <td>Output</td>
+          <td>Action, exchange or response</td>
+        </tr>
+
+      </table>
+
+      <p>
+        Transactional intelligence is not treated as inferior or
+        unnecessary. It is fundamental to many systems. The research
+        distinction concerns what additional properties emerge when
+        transactions occur within persistent relational structures.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- RELATIONAL MODE -->
+
+  <section>
+
+    <h2>03 — Relational Mode</h2>
+
+    <div class="research-block">
+
+      <p>
+        Relational intelligence concerns the capacity of a system to
+        preserve, interpret and adapt to relationships across time.
+      </p>
+
+      <div class="equation">
+        <code>I<sub>R</sub> = f(R, M, C)</code>
+      </div>
+
+      <div class="definition-grid">
+
+        <div class="definition">
+          <strong>R — Relationship</strong>
+          The structure connecting entities, states or participants.
+        </div>
+
+        <div class="definition">
+          <strong>M — Memory</strong>
+          Information that permits continuity across interactions.
+        </div>
+
+        <div class="definition">
+          <strong>C — Context</strong>
+          Conditions that give an interaction meaning or relevance.
+        </div>
+
+        <div class="definition">
+          <strong>I<sub>R</sub> — Relational Intelligence</strong>
+          A proposed representation of intelligence arising from the
+          interaction of relationship, memory and context.
+        </div>
+
+      </div>
+
+      <p>
+        In this framework, relational intelligence is therefore not
+        simply the ability to complete another transaction. It concerns
+        what the system can develop from the continuity between
+        transactions.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTINUITY -->
+
+  <section>
+
+    <h2>04 — From Interaction to Continuity</h2>
+
+    <div class="research-block">
+
+      <p>
+        Consider two interactions:
+      </p>
+
+      <div class="equation">
+        <code>T₁ → T₂</code>
+      </div>
+
+      <p>
+        In a purely transactional interpretation, the second transaction
+        can be treated independently from the first.
+      </p>
+
+      <p>
+        A relational system instead permits:
+      </p>
+
+      <div class="equation">
+        <code>T₁ → M → C → R → T₂</code>
+      </div>
+
+      <p>
+        The first interaction can therefore modify memory, context or
+        relational structure, which subsequently changes the conditions
+        under which the next interaction occurs.
+      </p>
+
+      <p>
+        This creates a feedback structure in which interaction can alter
+        the future state of the system.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- MEMORY -->
+
+  <section>
+
+    <h2>05 — Memory as Relational Continuity</h2>
+
+    <div class="research-block">
+
+      <p>
+        Within the framework, memory is not considered only as stored
+        information. It can also function as a mechanism of continuity
+        between states and relationships.
+      </p>
+
+      <div class="equation">
+        <code>
+          Stateₜ → Interaction → Memoryₜ₊₁ → Future Interaction
+        </code>
+      </div>
+
+      <p>
+        This allows the history of interaction to become relevant to
+        future behaviour.
+      </p>
+
+      <p>
+        The research implication is that a system may require more than
+        computational capacity to exhibit increasingly contextual
+        behaviour. It may also require structures through which previous
+        relationships influence future states.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- COMBINED MODEL -->
+
+  <section>
+
+    <h2>06 — Combined Intelligence Model</h2>
+
+    <div class="research-block">
+
+      <p>
+        The framework proposes a combined representation of
+        transactional and relational intelligence:
+      </p>
+
+      <div class="equation">
+        <code>
+          I = I<sub>T</sub> + λI<sub>R</sub>
+        </code>
+      </div>
+
+      <p>
+        where:
+      </p>
+
+      <div class="definition-grid">
+
+        <div class="definition">
+          <strong>I<sub>T</sub></strong>
+          Transactional intelligence.
+        </div>
+
+        <div class="definition">
+          <strong>I<sub>R</sub></strong>
+          Relational intelligence.
+        </div>
+
+        <div class="definition">
+          <strong>λ</strong>
+          A model parameter representing the contribution assigned to
+          relational intelligence.
+        </div>
+
+        <div class="definition">
+          <strong>I</strong>
+          A proposed combined intelligence representation.
+        </div>
+
+      </div>
+
+      <p>
+        This equation is a modelling hypothesis rather than an
+        established law. Its usefulness depends on whether the
+        quantities can be operationalised and whether the resulting
+        model provides explanatory or predictive value.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- NONLINEAR -->
+
+  <section>
+
+    <h2>07 — Nonlinear Extension</h2>
+
+    <div class="research-block">
+
+      <p>
+        A relational contribution does not necessarily need to be
+        additive. A more general formulation may be represented as:
+      </p>
+
+      <div class="equation">
+        <code>
+          I = Φ(I<sub>T</sub>, I<sub>R</sub>, I<sub>E</sub>)
+        </code>
+      </div>
+
+      <p>
+        where Φ represents a potentially nonlinear relationship between
+        transactional, relational and existential components.
+      </p>
+
+      <p>
+        This formulation allows future experiments to investigate
+        interactions in which the combined system behaviour cannot be
+        adequately represented by a simple sum.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- RELATIONAL BREAKDOWN -->
+
+  <section>
+
+    <h2>08 — Relational Breakdown</h2>
+
+    <div class="research-block">
+
+      <p>
+        The framework also considers the possibility of relational
+        breakdown: situations in which transactions continue to occur
+        while continuity, context or meaningful relationships become
+        degraded.
+      </p>
+
+      <div class="equation">
+        <code>
+          Transaction ↑
+          &nbsp;&nbsp;while&nbsp;&nbsp;
+          Relationship ↓
+        </code>
+      </div>
+
+      <p>
+        The distinction is important because a system can remain highly
+        active at the transactional level while losing contextual
+        coherence at the relational level.
+      </p>
+
+      <p>
+        This creates a research problem rather than a predetermined
+        conclusion: can measures of relational structure identify forms
+        of system degradation that transaction-level metrics fail to
+        capture?
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- DATA EXTRACTION -->
+
+  <section>
+
+    <h2>09 — Data Extraction vs. Intelligence Development</h2>
+
+    <div class="research-block">
+
+      <p>
+        The framework distinguishes between extracting information from
+        a system and developing intelligence within a relational system.
+      </p>
+
+      <table class="comparison">
+
+        <tr>
+          <th>Information Extraction</th>
+          <th>Relational Intelligence Development</th>
+        </tr>
+
+        <tr>
+          <td>Focuses on obtaining information</td>
+          <td>Focuses on developing contextual understanding</td>
+        </tr>
+
+        <tr>
+          <td>Can be transaction-oriented</td>
+          <td>Requires continuity across interactions</td>
+        </tr>
+
+        <tr>
+          <td>May treat participants as data sources</td>
+          <td>Considers participants as components of a relationship</td>
+        </tr>
+
+        <tr>
+          <td>Optimises information acquisition</td>
+          <td>Investigates adaptation and meaning within context</td>
+        </tr>
+
+      </table>
+
+      <p>
+        This distinction forms part of the broader Anuma investigation
+        into how intelligence can be developed across living,
+        technological and social systems without reducing intelligence
+        to data extraction alone.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- EXPERIMENT -->
+
+  <section>
+
+    <h2>10 — Experimental Structure</h2>
+
+    <div class="research-block">
+
+      <p>
+        The framework proposes comparing systems with different levels
+        of relational information.
+      </p>
+
+      <h3>Transactional baseline</h3>
+
+      <p>
+        A model receives the current state and produces a prediction or
+        action.
+      </p>
+
+      <div class="equation">
+        <code>
+          Xₜ → Model → X̂ₜ₊₁
+        </code>
+      </div>
+
+      <h3>Relational model</h3>
+
+      <p>
+        A model receives current state together with relational
+        structure, memory and context.
+      </p>
+
+      <div class="equation">
+        <code>
+          (Xₜ, Rₜ, Mₜ, Cₜ) → Model → X̂ₜ₊₁
+        </code>
+      </div>
+
+      <p>
+        Their predictive performance can then be compared:
+      </p>
+
+      <div class="equation">
+        <code>
+          ΔP =
+          P<sub>relational</sub>
+          −
+          P<sub>transactional</sub>
+        </code>
+      </div>
+
+      <p>
+        This provides a concrete experimental pathway for determining
+        whether relational variables provide measurable predictive
+        information beyond a transactional baseline.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- INFORMATION THEORY -->
+
+  <section>
+
+    <h2>11 — Information-Theoretic Formulation</h2>
+
+    <div class="research-block">
+
+      <p>
+        One proposed test asks whether relationships and memory contain
+        information about a future state after conditioning on the
+        current state.
+      </p>
+
+      <div class="equation">
+        <code>
+          I(Xₜ₊₁ ; Rₜ, Mₜ | Xₜ) &gt; 0
+        </code>
+      </div>
+
+      <p>
+        If the conditional mutual information is greater than zero under
+        an appropriately designed experiment, relational and memory
+        variables contain information about the future state that is
+        not completely represented by the current state alone.
+      </p>
+
+      <p>
+        The statistical interpretation, controls and experimental
+        design would need to be specified for any empirical test.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- SYSTEMS -->
+
+  <section>
+
+    <h2>12 — From Individual Systems to Living Systems</h2>
+
+    <div class="research-block">
+
+      <p>
+        The Transactional–Relational framework is designed to extend
+        beyond individual computational systems.
+      </p>
+
+      <p>
+        A network may be represented as:
+      </p>
+
+      <div class="equation">
+        <code>
+          G = (V, E, W)
+        </code>
+      </div>
+
+      <p>
+        where nodes, relationships and relationship weights form an
+        evolving structure.
+      </p>
+
+      <p>
+        The broader living-intelligence formulation is:
+      </p>
+
+      <div class="equation">
+        <code>
+          I<sub>system</sub> =
+          ΣI<sub>i</sub>
+          +
+          I<sub>relations</sub>
+          +
+          I<sub>emergence</sub>
+        </code>
+      </div>
+
+      <p>
+        This creates a research bridge between relational intelligence,
+        network science, distributed cognition, complex adaptive
+        systems and multi-agent intelligence.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- RELATION TO RTT -->
+
+  <section>
+
+    <h2>13 — Relationship to Resonance Transformation Theory</h2>
+
+    <div class="research-block">
+
+      <p>
+        Transactional–Relational Intelligence provides the relational
+        foundation for Resonance Transformation Theory.
+      </p>
+
+      <div class="equation">
+        <code>
+          Context → Relationship → Resonance → Transformation
+        </code>
+      </div>
+
+      <p>
+        RTT introduces resonance as a proposed transformation variable,
+        while the Transactional–Relational framework establishes why
+        relationships, memory and context may need to be represented
+        alongside immediate transactions.
+      </p>
+
+      <p>
+        Together, the frameworks form part of the larger Anuma research
+        architecture.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- SCIENTIFIC POSITIONING -->
+
+  <section>
+
+    <h2>14 — Scientific Positioning</h2>
+
+    <div class="positioning">
+
+      <div class="position-card">
+        <h3>Established Foundations</h3>
+
+        <p>
+          The framework draws upon established areas including
+          information theory, network science, dynamical systems and
+          complex systems.
+        </p>
+      </div>
+
+      <div class="position-card">
+        <h3>Proposed Framework</h3>
+
+        <p>
+          Transactional–Relational Intelligence proposes a conceptual
+          and mathematical distinction between transaction and
+          relationship.
+        </p>
+      </div>
+
+      <div class="position-card">
+        <h3>Testable Questions</h3>
+
+        <p>
+          The framework generates measurable questions concerning
+          prediction, memory, relational structure and system
+          transformation.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="research-block">
+
+      <p>
+        The framework should therefore be read as a research programme:
+        its proposed mathematical relationships require operational
+        definitions, experimental design, reproducible measurements and
+        comparison with appropriate baselines.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- CORE -->
+
+  <section>
+
+    <h2>15 — Anuma Research Core</h2>
+
+    <div class="research-block">
+
+      <p>
+        Transactional–Relational Intelligence is one of the foundational
+        research domains within the Anuma Research Core.
+      </p>
+
+      <div class="equation">
+        <code>
+          Information → Intelligence → Meaning → Coordination
+        </code>
+      </div>
+
+      <p>
+        The research programme investigates how these transitions may
+        emerge when systems are understood as relational, contextual
+        and evolving structures.
+      </p>
+
+      <a class="back-link" href="../../core/ANUMA-RTT-001.html">
+        ← Return to ANUMA Research Core
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+  <p>
+    © Anuma Research · Independent Research Programme
+  </p>
+</footer>
+
+</body>
+</html>
