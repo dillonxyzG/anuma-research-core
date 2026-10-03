@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Multiscale Intelligence and Hierarchical Systems | ANUMA</title>
+
+<link rel="stylesheet" href="../../../css/style.css">
+
+<style>
+.publication-hero {
+    padding: 120px 0 70px;
+    border-bottom: 1px solid rgba(198,164,82,0.18);
+}
+
+.publication-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0 35px;
+}
+
+.meta-tag {
+    border: 1px solid rgba(198,164,82,0.35);
+    padding: 8px 14px;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #c6a452;
+}
+
+.publication-content {
+    max-width: 900px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+.publication-content h2 {
+    margin-top: 70px;
+}
+
+.publication-content h3 {
+    margin-top: 40px;
+    color: #c6a452;
+}
+
+.equation {
+    margin: 30px 0;
+    padding: 25px;
+    border-left: 2px solid #c6a452;
+    background: rgba(255,255,255,0.025);
+    font-family: Georgia, serif;
+    font-size: 1.15rem;
+    color: #e0c477;
+    overflow-x: auto;
+}
+
+.definition {
+    margin: 25px 0;
+    padding: 25px;
+    border: 1px solid rgba(198,164,82,0.2);
+    background: rgba(198,164,82,0.025);
+}
+
+.research-note {
+    margin: 35px 0;
+    padding: 25px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.02);
+}
+
+.archive-link {
+    margin-top: 60px;
+    padding-top: 35px;
+    border-top: 1px solid rgba(198,164,82,0.18);
+}
+
+.archive-link a {
+    color: #c6a452;
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-container">
+
+        <a href="../../../index.html" class="logo">ANUMA</a>
+
+        <nav>
+            <a href="../../../index.html#research">Research</a>
+            <a href="../../../core/ANUMA-RTT-001.html">Core</a>
+            <a href="../../../index.html#systems">Systems</a>
+            <a href="../../../index.html#about">About</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="publication-hero">
+
+<div class="container">
+
+<p class="eyebrow">
+ANUMA RESEARCH ARCHIVE · PUBLICATION 008
+</p>
+
+<h1>
+Multiscale Intelligence and Hierarchical Systems
+</h1>
+
+<p class="hero-subtitle">
+A mathematical framework for investigating how relational intelligence,
+adaptation and emergence propagate across nested levels of organisation.
+</p>
+
+<div class="publication-meta">
+
+<span class="meta-tag">
+Research ID: ANUMA-MIHS-008
+</span>
+
+<span class="meta-tag">
+Proposed Framework
+</span>
+
+<span class="meta-tag">
+Multiscale Systems
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="publication-content">
+
+
+<h2>Abstract</h2>
+
+<p>
+Complex systems rarely exist at a single scale. Biological, technological,
+social and organisational systems commonly contain interacting components
+that themselves form subsystems, while those subsystems participate in
+larger structures.
+</p>
+
+<p>
+This document extends the ANUMA research programme from network-level
+emergence toward multiscale and hierarchical intelligence.
+</p>
+
+<p>
+The central question is how information, relationships, memory, resonance
+and transformation operate when a system is simultaneously an entity at one
+scale and a component of another.
+</p>
+
+<div class="research-note">
+
+<strong>Scientific status</strong>
+
+<p>
+The mathematical structures presented here are proposed formulations.
+Multiscale intelligence is treated as a research question rather than an
+established empirical conclusion.
+</p>
+
+</div>
+
+
+<h2>1. The Problem of Scale</h2>
+
+<p>
+Let a system at level k be represented by:
+</p>
+
+<div class="equation">
+S<sub>k,t</sub>
+=
+(X<sub>k,t</sub>,
+R<sub>k,t</sub>,
+M<sub>k,t</sub>,
+C<sub>k,t</sub>,
+A<sub>k,t</sub>)
+</div>
+
+<p>
+A higher-level system may contain multiple lower-level systems:
+</p>
+
+<div class="equation">
+S<sub>k+1,t</sub>
+=
+F(
+S<sub>1,t</sub>,
+S<sub>2,t</sub>,
+...,
+S<sub>N,t</sub>,
+R<sub>k,t</sub>
+)
+</div>
+
+<p>
+The same object can therefore be viewed as a component at one scale and a
+system at another.
+</p>
+
+
+<h2>2. Hierarchical Representation</h2>
+
+<p>
+A simple hierarchy can be represented as:
+</p>
+
+<div class="equation">
+Level 0
+→
+Level 1
+→
+Level 2
+→
+Level 3
+→
+...
+→
+Level K
+</div>
+
+<p>
+For example, a research programme might structurally contain:
+</p>
+
+<div class="equation">
+Entity
+→
+Group
+→
+Organisation
+→
+Institution
+→
+Society
+</div>
+
+<p>
+These categories are illustrative structural levels rather than claims that
+all systems must possess the same hierarchy.
+</p>
+
+
+<h2>3. Aggregation</h2>
+
+<p>
+Let lower-level states be:
+</p>
+
+<div class="equation">
+X<sub>1,t</sub>, X<sub>2,t</sub>, ..., X<sub>N,t</sub>
+</div>
+
+<p>
+A higher-level state can be defined through an aggregation function:
+</p>
+
+<div class="equation">
+X<sub>k+1,t</sub>
+=
+A<sub>k</sub>(
+X<sub>1,t</sub>,
+...,
+X<sub>N,t</sub>
+)
+</div>
+
+<p>
+The aggregation function may be linear or nonlinear depending upon the
+system being studied.
+</p>
+
+
+<h2>4. Emergence Across Scales</h2>
+
+<p>
+A higher-level property may depend not only on component states but also on
+their organisation:
+</p>
+
+<div class="equation">
+X<sub>k+1,t</sub>
+=
+F(
+X<sub>k,t</sub>,
+R<sub>k,t</sub>,
+G<sub>k,t</sub>
+)
+</div>
+
+<p>
+where G represents the relational network at the relevant scale.
+</p>
+
+<p>
+This extends the emergence model from a single network to a hierarchy of
+networks.
+</p>
+
+
+<h2>5. Scale-Dependent Intelligence</h2>
+
+<p>
+Let intelligence at scale k be:
+</p>
+
+<div class="equation">
+I<sub>k</sub>
+=
+Φ(
+I<sub>components</sub>,
+I<sub>relations</sub>,
+I<sub>emergence</sub>
+)
+</div>
+
+<p>
+The functional form Φ is intentionally left open for empirical
+investigation.
+</p>
+
+<p>
+The framework does not assume that intelligence at different scales is
+identical.
+</p>
+
+
+<h2>6. The Multiscale Intelligence Model</h2>
+
+<p>
+A proposed decomposition is:
+</p>
+
+<div class="equation">
+I<sub>system</sub>
+=
+Σ<sub>k=0</sub><sup>K</sup>
+I<sub>k</sub>
++
+I<sub>cross-scale</sub>
+</div>
+
+<p>
+The additional term represents information or adaptive influence arising
+between levels rather than within one level alone.
+</p>
+
+
+<h2>7. Cross-Scale Relationships</h2>
+
+<p>
+Let R<sub>k,k+1</sub> represent relationships between adjacent levels.
+</p>
+
+<div class="equation">
+R<sub>k,k+1</sub>
+=
+Relation(
+S<sub>k</sub>,
+S<sub>k+1</sub>
+)
+</div>
+
+<p>
+These relationships may include aggregation, control, feedback,
+communication, constraint or resource exchange depending upon the domain.
+</p>
+
+
+<h2>8. Bottom-Up Dynamics</h2>
+
+<p>
+Lower-level states can influence higher-level states:
+</p>
+
+<div class="equation">
+S<sub>k+1,t+1</sub>
+=
+F<sub>up</sub>(
+S<sub>k,t</sub>,
+R<sub>k,t</sub>
+)
+</div>
+
+<p>
+This represents a bottom-up pathway of influence.
+</p>
+
+
+<h2>9. Top-Down Dynamics</h2>
+
+<p>
+Higher-level structures may also constrain or modify lower-level dynamics:
+</p>
+
+<div class="equation">
+S<sub>k,t+1</sub>
+=
+F<sub>down</sub>(
+S<sub>k,t</sub>,
+S<sub>k+1,t</sub>,
+C<sub>k,t</sub>
+)
+</div>
+
+<p>
+This creates bidirectional cross-scale interaction.
+</p>
+
+
+<h2>10. Bidirectional Architecture</h2>
+
+<div class="equation">
+Lower Scale
+↑ ↓
+Higher Scale
+</div>
+
+<p>
+A complete multiscale system can therefore be represented as:
+</p>
+
+<div class="equation">
+S<sub>k,t</sub>
+↔
+R<sub>k,k+1,t</sub>
+↔
+S<sub>k+1,t</sub>
+</div>
+
+<p>
+The resulting dynamics are neither purely bottom-up nor purely top-down.
+</p>
+
+
+<h2>11. Cross-Scale Feedback</h2>
+
+<p>
+The coupled system can be represented as:
+</p>
+
+<div class="equation">
+S<sub>k,t+1</sub>
+=
+F(
+S<sub>k,t</sub>,
+S<sub>k+1,t</sub>,
+R<sub>k,t</sub>
+)
+</div>
+
+<div class="equation">
+S<sub>k+1,t+1</sub>
+=
+G(
+S<sub>k+1,t</sub>,
+S<sub>k,t</sub>,
+R<sub>k,k+1,t</sub>
+)
+</div>
+
+<p>
+This creates a feedback structure between scales.
+</p>
+
+
+<h2>12. Memory Across Scales</h2>
+
+<p>
+Memory can also exist at multiple levels:
+</p>
+
+<div class="equation">
+M<sub>k,t</sub>
+</div>
+
+<p>
+A higher-level memory may depend upon the histories of its components:
+</p>
+
+<div class="equation">
+M<sub>k+1,t+1</sub>
+=
+H(
+M<sub>k+1,t</sub>,
+M<sub>1,t</sub>,
+...,
+M<sub>N,t</sub>
+)
+</div>
+
+<p>
+This provides a mathematical representation of distributed historical
+structure.
+</p>
+
+
+<h2>13. Relational Memory</h2>
+
+<p>
+Memory need not be restricted to individual entities.
+The network itself may preserve historical information:
+</p>
+
+<div class="equation">
+G<sub>t+1</sub>
+=
+Γ(
+G<sub>t</sub>,
+X<sub>t</sub>,
+M<sub>t</sub>
+)
+</div>
+
+<p>
+Thus, relationships can become part of the historical state of a system.
+</p>
+
+
+<h2>14. Context Across Scales</h2>
+
+<p>
+Context may also be nested:
+</p>
+
+<div class="equation">
+C<sub>0</sub>
+⊂
+C<sub>1</sub>
+⊂
+C<sub>2</sub>
+...
+⊂
+C<sub>K</sub>
+</div>
+
+<p>
+A local system may therefore operate within a larger environmental or
+organisational context.
+</p>
+
+
+<h2>15. Resonance Across Scales</h2>
+
+<p>
+The RTT resonance concept can be extended to cross-scale alignment.
+</p>
+
+<div class="equation">
+ρ<sub>k,k+1</sub>(t)
+=
+Alignment(
+X<sub>k,t</sub>,
+R<sub>k,k+1,t</sub>,
+C<sub>k+1,t</sub>
+)
+</div>
+
+<p>
+This is a proposed representation of alignment between a system and the
+larger structure in which it participates.
+</p>
+
+
+<h2>16. Multiscale Transformation</h2>
+
+<p>
+The individual RTT transformation equation:
+</p>
+
+<div class="equation">
+X<sub>t+1</sub>
+=
+X<sub>t</sub>
++
+αρ<sub>t</sub>R<sub>t</sub>
++
+βC<sub>t</sub>
++
+ε<sub>t</sub>
+</div>
+
+<p>
+can be extended across scales:
+</p>
+
+<div class="equation">
+X<sub>k,t+1</sub>
+=
+X<sub>k,t</sub>
++
+α<sub>k</sub>
+ρ<sub>k,t</sub>
+R<sub>k,t</sub>
++
+β<sub>k</sub>
+C<sub>k,t</sub>
++
+ε<sub>k,t</sub>
+</div>
+
+<p>
+Each level may therefore possess different coupling parameters.
+</p>
+
+
+<h2>17. Scale Coupling</h2>
+
+<p>
+Cross-scale influence can be represented by:
+</p>
+
+<div class="equation">
+ΔX<sub>k,t</sub>
+=
+F(
+ρ<sub>k,k+1,t</sub>,
+R<sub>k,k+1,t</sub>,
+X<sub>k+1,t</sub>
+)
+</div>
+
+<p>
+The magnitude of this effect is an empirical quantity rather than an
+assumed constant.
+</p>
+
+
+<h2>18. Information Flow Across Scales</h2>
+
+<p>
+The information-theoretic framework can be extended to cross-scale
+relationships:
+</p>
+
+<div class="equation">
+I(
+X<sub>k,t+1</sub>;
+X<sub>k+1,t</sub>
+|
+X<sub>k,t</sub>
+)
+</div>
+
+<p>
+This asks whether the higher-level state contains information about the
+future lower-level state beyond the lower-level present state.
+</p>
+
+<p>
+The reverse direction can also be investigated:
+</p>
+
+<div class="equation">
+I(
+X<sub>k+1,t+1</sub>;
+X<sub>k,t</sub>
+|
+X<sub>k+1,t</sub>
+)
+</div>
+
+
+<h2>19. Directionality</h2>
+
+<p>
+The two conditional information quantities need not be equal.
+</p>
+
+<p>
+This creates a possible empirical distinction between:
+</p>
+
+<ul>
+<li>bottom-up information flow</li>
+<li>top-down information flow</li>
+<li>bidirectional information flow</li>
+</ul>
+
+<p>
+Their relative magnitude must be determined from measured data.
+</p>
+
+
+<h2>20. Hierarchical Network</h2>
+
+<p>
+A multiscale system can be represented as a collection of networks:
+</p>
+
+<div class="equation">
+G =
+{
+G<sub>0</sub>,
+G<sub>1</sub>,
+G<sub>2</sub>,
+...,
+G<sub>K</sub>
+}
+</div>
+
+<p>
+with cross-scale edges connecting the networks:
+</p>
+
+<div class="equation">
+E<sub>cross</sub>
+=
+⋃ E<sub>k,k+1</sub>
+</div>
+
+
+<h2>21. Nested Networks</h2>
+
+<p>
+The resulting architecture is:
+</p>
+
+<div class="equation">
+G<sub>0</sub>
+↕
+G<sub>1</sub>
+↕
+G<sub>2</sub>
+↕
+...
+↕
+G<sub>K</sub>
+</div>
+
+<p>
+This provides a structural representation of systems in which local
+networks are embedded within larger networks.
+</p>
+
+
+<h2>22. Multiscale Emergence</h2>
+
+<p>
+Emergence may occur within a level or between levels.
+</p>
+
+<div class="equation">
+I<sub>emergence</sub>
+=
+I<sub>within-scale</sub>
++
+I<sub>cross-scale</sub>
+</div>
+
+<p>
+The second component represents a proposed category for properties arising
+from interactions between different organisational levels.
+</p>
+
+
+<h2>23. Collective State Formation</h2>
+
+<p>
+A higher-level state may be generated through collective interaction:
+</p>
+
+<div class="equation">
+X<sub>k+1,t</sub>
+=
+Ψ(
+X<sub>1,t</sub>,
+X<sub>2,t</sub>,
+...,
+X<sub>N,t</sub>,
+G<sub>k,t</sub>
+)
+</div>
+
+<p>
+The function Ψ represents a scale-specific aggregation or emergence
+operator.
+</p>
+
+
+<h2>24. Nonlinear Hierarchies</h2>
+
+<p>
+The mapping between scales need not be linear:
+</p>
+
+<div class="equation">
+X<sub>k+1</sub>
+=
+Ψ(X<sub>k</sub>)
+</div>
+
+<p>
+may contain thresholds, saturation, amplification, suppression or other
+nonlinear behaviour.
+</p>
+
+<p>
+This is important because a small local change may, under some conditions,
+produce a larger system-level response.
+</p>
+
+
+<h2>25. Criticality and Transitions</h2>
+
+<p>
+Let λ represent a system control parameter.
+</p>
+
+<div class="equation">
+X<sub>k,t+1</sub>
+=
+F(X<sub>k,t</sub>,λ)
+</div>
+
+<p>
+Changing λ may move the system between different dynamical regimes.
+</p>
+
+<p>
+A multiscale system may therefore experience transitions that propagate
+between levels.
+</p>
+
+
+<h2>26. Propagation of Transformation</h2>
+
+<p>
+A local transformation can be represented as:
+</p>
+
+<div class="equation">
+ΔX<sub>k,t</sub>
+→
+ΔR<sub>k,t</sub>
+→
+ΔX<sub>k+1,t</sub>
+</div>
+
+<p>
+A higher-level transformation may subsequently propagate downward:
+</p>
+
+<div class="equation">
+ΔX<sub>k+1,t</sub>
+→
+ΔC<sub>k,t</sub>
+→
+ΔX<sub>k,t+1</sub>
+</div>
+
+<p>
+This establishes a proposed bidirectional transformation loop.
+</p>
+
+
+<h2>27. Multiscale Living Intelligence</h2>
+
+<p>
+The Living Intelligence framework can therefore be extended:
+</p>
+
+<div class="equation">
+I<sub>living</sub>
+=
+Σ<sub>k</sub>
+[
+I<sub>components,k</sub>
++
+I<sub>relations,k</sub>
++
+I<sub>emergence,k</sub>
+]
++
+I<sub>cross-scale</sub>
+</div>
+
+<p>
+This is a proposed abstraction rather than a measured law.
+</p>
+
+
+<h2>28. Biological Interpretation</h2>
+
+<p>
+Biological systems provide examples of nested organisation in which
+components participate in larger structures.
+</p>
+
+<p>
+The mathematical framework can investigate such organisation without
+assuming that every level should be assigned an identical notion of
+intelligence.
+</p>
+
+<p>
+The relevant research question is whether measurable information,
+adaptation or coordination occurs across scales.
+</p>
+
+
+<h2>29. Social Interpretation</h2>
+
+<p>
+Human systems can similarly contain multiple levels of organisation.
+</p>
+
+<div class="equation">
+Individual
+→
+Group
+→
+Organisation
+→
+Institution
+→
+Society
+</div>
+
+<p>
+Each level may have distinct states, relationships, memory and context.
+</p>
+
+
+<h2>30. Technological Interpretation</h2>
+
+<p>
+Distributed technological systems can also be represented hierarchically:
+</p>
+
+<div class="equation">
+Sensor
+→
+Node
+→
+Local Network
+→
+Regional Network
+→
+Distributed System
+</div>
+
+<p>
+This provides a possible engineering environment for investigating
+cross-scale information flow.
+</p>
+
+
+<h2>31. Ambient Computing</h2>
+
+<p>
+The ANUMA ambient-computing architecture can be interpreted as a multiscale
+system in which local sensing nodes interact with one another while
+remaining embedded within a larger environment.
+</p>
+
+<div class="equation">
+Environment
+→
+Node
+→
+Network
+→
+Learning Environment
+</div>
+
+<p>
+The objective is to investigate whether intelligence can emerge from the
+organisation of these relationships rather than relying exclusively on a
+central computational unit.
+</p>
+
+
+<h2>32. Anuma Learning Station</h2>
+
+<p>
+The Anuma Learning Station can serve as a physical testbed for multiscale
+experimentation.
+</p>
+
+<p>
+A possible architecture is:
+</p>
+
+<div class="equation">
+Sensor Layer
+→
+Node Layer
+→
+Relational Layer
+→
+Environmental Layer
+→
+Learning-System Layer
+</div>
+
+<p>
+Measurements can be taken at each layer and compared with information
+available across layers.
+</p>
+
+
+<h2>33. Experimental Design</h2>
+
+<p>
+A proposed experiment can compare three models:
+</p>
+
+<ol>
+
+<li>
+Local-only model
+</li>
+
+<li>
+Within-network relational model
+</li>
+
+<li>
+Multiscale relational model
+</li>
+
+</ol>
+
+<p>
+Their predictive or adaptive performance can then be evaluated under
+matched conditions.
+</p>
+
+
+<h2>34. Multiscale Information Test</h2>
+
+<p>
+The central test can be expressed as:
+</p>
+
+<div class="equation">
+I(
+X<sub>k,t+1</sub>;
+X<sub>k+1,t</sub>,
+R<sub>k,k+1,t</sub>
+|
+X<sub>k,t</sub>
+)
+&gt; 0
+</div>
+
+<p>
+If supported empirically, this would indicate that higher-level and
+cross-scale variables contain predictive information about the lower-level
+future state beyond the lower-level current state.
+</p>
+
+
+<h2>35. Predictive Comparison</h2>
+
+<p>
+Three predictive models can be defined:
+</p>
+
+<div class="equation">
+P<sub>L</sub>
+=
+P(X<sub>t+1</sub>|X<sub>t</sub>)
+</div>
+
+<div class="equation">
+P<sub>R</sub>
+=
+P(X<sub>t+1</sub>|X<sub>t</sub>,R<sub>t</sub>)
+</div>
+
+<div class="equation">
+P<sub>MS</sub>
+=
+P(X<sub>t+1</sub>|
+X<sub>t</sub>,R<sub>t</sub>,X<sub>k+1,t</sub>)
+</div>
+
+<p>
+The comparison can investigate whether the addition of relational and
+cross-scale variables produces measurable predictive improvement.
+</p>
+
+
+<h2>36. Research Questions</h2>
+
+<ul>
+
+<li>
+Does intelligence exhibit measurable structure across organisational
+scales?
+</li>
+
+<li>
+Does information flow predominantly upward, downward or in both directions?
+</li>
+
+<li>
+Can higher-level relational structure improve lower-level prediction?
+</li>
+
+<li>
+Can lower-level interactions alter higher-level dynamics?
+</li>
+
+<li>
+Does memory operate differently at different scales?
+</li>
+
+<li>
+Can resonance be meaningfully defined between organisational levels?
+</li>
+
+<li>
+Under what conditions does cross-scale interaction produce emergent
+behaviour?
+</li>
+
+</ul>
+
+
+<h2>37. Scientific Positioning</h2>
+
+<div class="definition">
+
+<p>
+<strong>Established foundations</strong><br>
+Hierarchical systems, multiscale modelling, network science, dynamical
+systems, information theory and complex adaptive systems provide established
+scientific and mathematical foundations.
+</p>
+
+<p>
+<strong>Proposed framework</strong><br>
+The use of cross-scale relational intelligence and resonance as components
+of a unified intelligence model is proposed within the ANUMA programme.
+</p>
+
+<p>
+<strong>Testable hypotheses</strong><br>
+Cross-scale variables can be evaluated for predictive information,
+adaptive influence and measurable effects on system dynamics.
+</p>
+
+</div>
+
+
+<h2>38. Open Problems</h2>
+
+<ul>
+
+<li>
+How should boundaries between scales be formally defined?
+</li>
+
+<li>
+What constitutes a valid aggregation operator?
+</li>
+
+<li>
+How can cross-scale causality be distinguished from correlation?
+</li>
+
+<li>
+Can one resonance formalism operate across radically different scales?
+</li>
+
+<li>
+How should information be normalised when variables have different units
+and temporal resolutions?
+</li>
+
+<li>
+When does a collection of systems become a higher-order system?
+</li>
+
+<li>
+Can multiscale intelligence be measured without assuming its existence in
+advance?
+</li>
+
+</ul>
+
+
+<h2>39. Complete Multiscale Architecture</h2>
+
+<div class="equation">
+Environment
+↓
+Context
+↓
+Entities
+↓
+Relationships
+↓
+Local Dynamics
+↓
+Network Dynamics
+↓
+Emergence
+↓
+Cross-Scale Transformation
+↓
+Memory
+↓
+Future Context
+</div>
+
+<p>
+This architecture extends the ANUMA research programme from individual
+relational dynamics toward nested and multiscale systems.
+</p>
+
+
+<h2>40. Conclusion</h2>
+
+<p>
+The multiscale formulation proposes that intelligence should be investigated
+not only within individual entities or networks but also across levels of
+organisation.
+</p>
+
+<p>
+The fundamental structure is:
+</p>
+
+<div class="equation">
+Local State
+↔
+Relationship
+↔
+Collective State
+↔
+Higher-Level Context
+</div>
+
+<p>
+The framework therefore creates a mathematical bridge between relational
+intelligence, complex adaptive systems, information theory, dynamical
+systems and living intelligence.
+</p>
+
+<p>
+The central empirical question remains whether cross-scale relational
+structure contains measurable information or produces measurable adaptive
+effects beyond what can be explained at a single scale.
+</p>
+
+
+<h2>Suggested Citation</h2>
+
+<p>
+Adegunloye Esan, Sean.
+<strong>
+Multiscale Intelligence and Hierarchical Systems.
+</strong>
+ANUMA Independent Research Core, Research Document ANUMA-MIHS-008.
+</p>
+
+
+<div class="archive-link">
+
+<p>
+<strong>Continue the research archive:</strong>
+</p>
+
+<p>
+<a href="../complex-adaptive-systems-emergent-intelligence/index.html">
+← Publication 007 — Complex Adaptive Systems and Emergent Intelligence
+</a>
+</p>
+
+<p>
+<a href="../index.html">
+← Return to Publications Archive
+</a>
+</p>
+
+<p>
+<a href="../../../core/ANUMA-RTT-001.html">
+→ Return to ANUMA Research Core
+</a>
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+
+<div class="container">
+
+<p>
+ANUMA · Independent Research Core
+</p>
+
+<p>
+Intelligence is not only computation. It is relationship.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
