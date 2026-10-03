@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Information-Theoretic Foundations of Relational Intelligence | ANUMA</title>
+
+<link rel="stylesheet" href="../../../css/style.css">
+
+<style>
+.publication-hero {
+    padding: 120px 0 70px;
+    border-bottom: 1px solid rgba(198, 164, 82, 0.18);
+}
+
+.publication-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0 35px;
+}
+
+.meta-tag {
+    border: 1px solid rgba(198, 164, 82, 0.35);
+    padding: 8px 14px;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #c6a452;
+}
+
+.publication-content {
+    max-width: 900px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+.publication-content h2 {
+    margin-top: 70px;
+}
+
+.publication-content h3 {
+    margin-top: 40px;
+    color: #c6a452;
+}
+
+.equation {
+    margin: 30px 0;
+    padding: 25px;
+    border-left: 2px solid #c6a452;
+    background: rgba(255,255,255,0.025);
+    font-family: Georgia, serif;
+    font-size: 1.15rem;
+    color: #e0c477;
+    overflow-x: auto;
+}
+
+.definition {
+    margin: 25px 0;
+    padding: 25px;
+    border: 1px solid rgba(198,164,82,0.2);
+    background: rgba(198,164,82,0.025);
+}
+
+.research-note {
+    margin: 35px 0;
+    padding: 25px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.02);
+}
+
+.archive-link {
+    margin-top: 60px;
+    padding-top: 35px;
+    border-top: 1px solid rgba(198,164,82,0.18);
+}
+
+.archive-link a {
+    color: #c6a452;
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-container">
+
+        <a href="../../../index.html" class="logo">ANUMA</a>
+
+        <nav>
+            <a href="../../../index.html#research">Research</a>
+            <a href="../../../core/ANUMA-RTT-001.html">Core</a>
+            <a href="../../../index.html#systems">Systems</a>
+            <a href="../../../index.html#about">About</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="publication-hero">
+
+<div class="container">
+
+<p class="eyebrow">
+ANUMA RESEARCH ARCHIVE · PUBLICATION 005
+</p>
+
+<h1>
+Information-Theoretic Foundations of Relational Intelligence
+</h1>
+
+<p class="hero-subtitle">
+A formal investigation of whether relational structure, memory and context
+contain predictive information about future system states.
+</p>
+
+<div class="publication-meta">
+
+<span class="meta-tag">
+Research ID: ANUMA-ITRI-005
+</span>
+
+<span class="meta-tag">
+Proposed Framework
+</span>
+
+<span class="meta-tag">
+Information Theory
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="publication-content">
+
+
+<h2>Abstract</h2>
+
+<p>
+This document develops an information-theoretic formulation of the
+Transactional–Relational Intelligence framework.
+</p>
+
+<p>
+The central question is whether relational variables contain information
+about future system states that cannot be explained by the system's current
+state alone.
+</p>
+
+<p>
+The framework therefore proposes a measurable distinction between a system
+that processes immediate transactions and a system whose predictions and
+transformations depend upon relationships, memory and contextual structure.
+</p>
+
+<div class="research-note">
+
+<strong>Scientific status</strong>
+
+<p>
+The equations in this document constitute proposed mathematical models and
+testable hypotheses. They should not be interpreted as established empirical
+laws until supported by experimental evidence.
+</p>
+
+</div>
+
+
+<h2>1. The Information Problem</h2>
+
+<p>
+A conventional transactional description of a system often concentrates on
+the current state and the immediate input-output relationship.
+</p>
+
+<p>
+Let the current system state be represented by:
+</p>
+
+<div class="equation">
+X<sub>t</sub>
+</div>
+
+<p>
+A transactional model can therefore be expressed conceptually as:
+</p>
+
+<div class="equation">
+X<sub>t+1</sub> = F(X<sub>t</sub>, U<sub>t</sub>)
+</div>
+
+<p>
+where U<sub>t</sub> represents an immediate input, operation or transaction.
+</p>
+
+<p>
+The relational framework introduces additional variables representing the
+structure surrounding the current state:
+</p>
+
+<div class="equation">
+S<sub>t</sub> =
+(X<sub>t</sub>, R<sub>t</sub>, M<sub>t</sub>, C<sub>t</sub>, A<sub>t</sub>)
+</div>
+
+<p>
+where:
+</p>
+
+<ul>
+<li><strong>X</strong> = system state</li>
+<li><strong>R</strong> = relational structure</li>
+<li><strong>M</strong> = memory</li>
+<li><strong>C</strong> = context</li>
+<li><strong>A</strong> = agency</li>
+</ul>
+
+
+<h2>2. Transactional Information</h2>
+
+<p>
+Let X<sub>t+1</sub> denote the future state of a system.
+The information available in the present state about that future can be
+represented using mutual information:
+</p>
+
+<div class="equation">
+I(X<sub>t+1</sub>; X<sub>t</sub>)
+</div>
+
+<p>
+This quantity describes the statistical dependence between the current and
+future states.
+</p>
+
+<p>
+A transactional model may therefore attempt to predict future behaviour
+primarily from immediate state variables and inputs.
+</p>
+
+
+<h2>3. Relational Information</h2>
+
+<p>
+The central proposition of the relational framework is that the relationship
+between entities may contain information that is not reducible to an
+individual state variable.
+</p>
+
+<p>
+Let R<sub>t</sub> represent relational structure.
+The corresponding information relationship can be represented as:
+</p>
+
+<div class="equation">
+I(X<sub>t+1</sub>; R<sub>t</sub>)
+</div>
+
+<p>
+However, the stronger question is whether relational information remains
+predictive after the current state has already been taken into account.
+</p>
+
+<div class="equation">
+I(X<sub>t+1</sub>; R<sub>t</sub> | X<sub>t</sub>)
+</div>
+
+<p>
+This conditional mutual information becomes a central proposed measurement
+for the framework.
+</p>
+
+
+<h2>4. The Core Test</h2>
+
+<div class="equation">
+I(X<sub>t+1</sub>; R<sub>t</sub> | X<sub>t</sub>) &gt; 0
+</div>
+
+<p>
+If this quantity is empirically greater than zero under an appropriate
+experimental design, then relational structure contains predictive
+information about the future state beyond the information contained in the
+current state alone.
+</p>
+
+<p>
+This does not by itself establish causation.
+It establishes a statistical relationship that can motivate further
+investigation.
+</p>
+
+
+<h2>5. Relational Information with Memory</h2>
+
+<p>
+Relationships may persist through time.
+The system therefore includes memory:
+</p>
+
+<div class="equation">
+M<sub>t</sub>
+</div>
+
+<p>
+The proposed extended information quantity becomes:
+</p>
+
+<div class="equation">
+I(X<sub>t+1</sub>;
+R<sub>t</sub>, M<sub>t</sub>
+|
+X<sub>t</sub>)
+</div>
+
+<p>
+This formulation asks whether relationships and accumulated history jointly
+provide information about the future state beyond the present state.
+</p>
+
+
+<h2>6. Contextual Information</h2>
+
+<p>
+Context provides another layer of structure.
+Let C<sub>t</sub> represent environmental, social, spatial or situational
+context.
+</p>
+
+<div class="equation">
+I(X<sub>t+1</sub>;
+R<sub>t</sub>, M<sub>t</sub>, C<sub>t</sub>
+|
+X<sub>t</sub>)
+</div>
+
+<p>
+The expression represents a proposed test of whether relational,
+historical and contextual information jointly contribute to prediction.
+</p>
+
+
+<h2>7. Conditional Independence as a Baseline</h2>
+
+<p>
+A purely transactional hypothesis can be expressed as the conditional
+independence assumption:
+</p>
+
+<div class="equation">
+X<sub>t+1</sub> ⟂
+(R<sub>t</sub>, M<sub>t</sub>, C<sub>t</sub>)
+|
+X<sub>t</sub>
+</div>
+
+<p>
+If this assumption holds, then once X<sub>t</sub> is known, the additional
+relational variables provide no further predictive information.
+</p>
+
+<p>
+The relational framework instead investigates circumstances under which this
+conditional independence does not hold.
+</p>
+
+
+<h2>8. Information and Intelligence</h2>
+
+<p>
+The framework distinguishes information from intelligence.
+</p>
+
+<p>
+Information represents available structure or statistical dependence.
+Intelligence concerns the ability of a system to use such information in
+prediction, adaptation, coordination or transformation.
+</p>
+
+<div class="definition">
+
+<strong>Proposed distinction</strong>
+
+<p>
+Information describes what structure is available.
+Intelligence concerns how a system incorporates that structure into
+adaptive behaviour.
+</p>
+
+</div>
+
+
+<h2>9. Relational Intelligence</h2>
+
+<p>
+The broader relational intelligence formulation is represented as:
+</p>
+
+<div class="equation">
+I<sub>R</sub> = f(R, M, C)
+</div>
+
+<p>
+This formulation treats relational intelligence as dependent upon
+relationships, memory and context rather than immediate transactions alone.
+</p>
+
+<p>
+The model remains a proposed abstraction whose measurable form must be
+determined through experimental work.
+</p>
+
+
+<h2>10. Transactional–Relational Intelligence</h2>
+
+<p>
+A combined model proposed in the broader framework is:
+</p>
+
+<div class="equation">
+I = I<sub>T</sub> + λI<sub>R</sub>
+</div>
+
+<p>
+where:
+</p>
+
+<ul>
+<li><strong>I<sub>T</sub></strong> represents transactional intelligence</li>
+<li><strong>I<sub>R</sub></strong> represents relational intelligence</li>
+<li><strong>λ</strong> represents the contribution assigned to relational information</li>
+</ul>
+
+<p>
+A nonlinear formulation may also be investigated where relational structure
+changes the effective behaviour of the system rather than simply adding an
+independent quantity.
+</p>
+
+
+<h2>11. Predictive Improvement</h2>
+
+<p>
+The framework proposes comparing two predictive models.
+</p>
+
+<h3>Transactional model</h3>
+
+<div class="equation">
+P<sub>T</sub> =
+P(X<sub>t+1</sub> | X<sub>t</sub>)
+</div>
+
+<h3>Relational model</h3>
+
+<div class="equation">
+P<sub>R</sub> =
+P(X<sub>t+1</sub> |
+X<sub>t</sub>, R<sub>t</sub>, M<sub>t</sub>, C<sub>t</sub>)
+</div>
+
+<p>
+The predictive difference can then be represented as:
+</p>
+
+<div class="equation">
+ΔP = P<sub>R</sub> − P<sub>T</sub>
+</div>
+
+<p>
+The empirical task is to determine whether the additional relational
+variables produce measurable predictive improvement under controlled
+conditions.
+</p>
+
+
+<h2>12. Experimental Design</h2>
+
+<p>
+A basic experiment can contain two model classes:
+</p>
+
+<ul>
+<li>Baseline transactional model</li>
+<li>Relationally enriched model</li>
+</ul>
+
+<p>
+Both models should receive comparable training data and evaluation
+conditions.
+</p>
+
+<p>
+The relational model additionally receives variables representing
+relationships, memory and context.
+</p>
+
+<p>
+Performance can then be compared using an appropriate predictive metric.
+</p>
+
+
+<h2>13. Information-Theoretic Evaluation</h2>
+
+<p>
+The experiment can estimate:
+</p>
+
+<div class="equation">
+I(X<sub>t+1</sub>; R<sub>t</sub> | X<sub>t</sub>)
+</div>
+
+<p>
+and, where appropriate:
+</p>
+
+<div class="equation">
+I(X<sub>t+1</sub>;
+R<sub>t</sub>, M<sub>t</sub>, C<sub>t</sub>
+|
+X<sub>t</sub>)
+</div>
+
+<p>
+The estimates should be accompanied by uncertainty analysis, suitable
+controls and statistical validation.
+</p>
+
+
+<h2>14. Temporal Structure</h2>
+
+<p>
+Relational intelligence is not necessarily instantaneous.
+Relationships can accumulate and change over time.
+</p>
+
+<div class="equation">
+R<sub>t+1</sub> = G(R<sub>t</sub>, X<sub>t</sub>, C<sub>t</sub>)
+</div>
+
+<p>
+Memory may similarly evolve:
+</p>
+
+<div class="equation">
+M<sub>t+1</sub> = H(M<sub>t</sub>, X<sub>t</sub>, R<sub>t</sub>)
+</div>
+
+<p>
+The resulting system is therefore dynamic rather than static.
+</p>
+
+
+<h2>15. Relation to Resonance Transformation Theory</h2>
+
+<p>
+The information-theoretic framework provides a potential measurement layer
+for Resonance Transformation Theory.
+</p>
+
+<p>
+RTT proposes a resonance coefficient:
+</p>
+
+<div class="equation">
+ρ(t) =
+Alignment(X<sub>t</sub>, R<sub>t</sub>, C<sub>t</sub>)
+</div>
+
+<p>
+The proposed transformation model is:
+</p>
+
+<div class="equation">
+X<sub>t+1</sub> =
+X<sub>t</sub>
++
+αρ<sub>t</sub>R<sub>t</sub>
++
+βC<sub>t</sub>
++
+ε<sub>t</sub>
+</div>
+
+<p>
+The information-theoretic programme provides a possible route for testing
+whether the relational and contextual components represented in RTT contain
+measurable predictive information.
+</p>
+
+
+<h2>16. From Information to Transformation</h2>
+
+<p>
+The proposed architecture can therefore be represented as:
+</p>
+
+<div class="equation">
+Context
+→ Relationship
+→ Information
+→ Resonance
+→ Transformation
+→ Memory
+→ Future Context
+</div>
+
+<p>
+Within this architecture, information is not treated solely as a static
+resource. It becomes part of a dynamic feedback process through which the
+system updates its future state.
+</p>
+
+
+<h2>17. Living Intelligence</h2>
+
+<p>
+The broader Living Intelligence framework represents intelligence as an
+emergent property of interacting entities and relationships.
+</p>
+
+<div class="equation">
+I<sub>system</sub>
+=
+Σ I<sub>i</sub>
++
+I<sub>relations</sub>
++
+I<sub>emergence</sub>
+</div>
+
+<p>
+The information-theoretic programme provides a potential method for
+investigating whether the relational and emergent terms contribute
+measurable information beyond isolated component states.
+</p>
+
+
+<h2>18. Research Questions</h2>
+
+<ul>
+
+<li>
+Does relational structure contain predictive information about future system
+states?
+</li>
+
+<li>
+Does memory increase the predictive value of relational information?
+</li>
+
+<li>
+Does contextual information alter the relationship between present and
+future states?
+</li>
+
+<li>
+Can relationally enriched models outperform transaction-only baselines?
+</li>
+
+<li>
+Can information-theoretic measurements help operationalise relational
+intelligence?
+</li>
+
+<li>
+Can resonance be connected to measurable changes in system dynamics?
+</li>
+
+</ul>
+
+
+<h2>19. Proposed Research Programme</h2>
+
+<p>
+The investigation can proceed through progressively more complex systems:
+</p>
+
+<ol>
+
+<li>
+Synthetic systems with known relational structures
+</li>
+
+<li>
+Network simulations
+</li>
+
+<li>
+Multi-agent environments
+</li>
+
+<li>
+Biological or ecological systems where appropriate
+</li>
+
+<li>
+Human learning and interaction environments
+</li>
+
+<li>
+Physical experimental platforms such as the Anuma Learning Station
+</li>
+
+</ol>
+
+
+<h2>20. Scientific Positioning</h2>
+
+<div class="definition">
+
+<p>
+<strong>Established science</strong><br>
+Mutual information, conditional mutual information, entropy,
+probability theory and statistical dependence are established mathematical
+and information-theoretic concepts.
+</p>
+
+<p>
+<strong>Proposed framework</strong><br>
+The interpretation of relational information as a component of
+“relational intelligence” is proposed within this research programme.
+</p>
+
+<p>
+<strong>Testable hypotheses</strong><br>
+The predictive contribution of relationships, memory, context and resonance
+can be investigated empirically.
+</p>
+
+</div>
+
+
+<h2>21. Open Problems</h2>
+
+<ul>
+
+<li>
+How should relational structure be represented across different domains?
+</li>
+
+<li>
+How should relational intelligence be operationally measured?
+</li>
+
+<li>
+How can causal influence be distinguished from statistical dependence?
+</li>
+
+<li>
+How should changing network topology affect information measurements?
+</li>
+
+<li>
+How should resonance be mathematically defined for different physical and
+social systems?
+</li>
+
+<li>
+What experimental conditions are sufficient to demonstrate genuine
+relational emergence?
+</li>
+
+</ul>
+
+
+<h2>22. Conclusion</h2>
+
+<p>
+The information-theoretic formulation establishes a mathematical bridge
+between the conceptual distinction of transactional and relational
+intelligence and an experimentally testable research programme.
+</p>
+
+<p>
+Its central proposed test is:
+</p>
+
+<div class="equation">
+I(X<sub>t+1</sub>; R<sub>t</sub> | X<sub>t</sub>) &gt; 0
+</div>
+
+<p>
+The expression does not by itself establish a new law of intelligence.
+Rather, it defines a measurable question: whether relational structure
+contains predictive information about future states beyond the present
+state.
+</p>
+
+<p>
+This question provides a formal connection between information theory,
+network science, dynamical systems, relational intelligence and the broader
+Anuma research programme.
+</p>
+
+
+<h2>Suggested Citation</h2>
+
+<p>
+Adegunloye Esan, Sean.
+<strong>
+Information-Theoretic Foundations of Relational Intelligence.
+</strong>
+ANUMA Independent Research Core, Research Document ANUMA-ITRI-005.
+</p>
+
+
+<div class="archive-link">
+
+<p>
+<strong>Continue the research archive:</strong>
+</p>
+
+<p>
+<a href="../living-intelligence-systems/index.html">
+← Publication 004 — Living Intelligence Systems
+</a>
+</p>
+
+<p>
+<a href="../index.html">
+← Return to Publications Archive
+</a>
+</p>
+
+<p>
+<a href="../../../core/ANUMA-RTT-001.html">
+→ Return to ANUMA Research Core
+</a>
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+
+<div class="container">
+
+<p>
+ANUMA · Independent Research Core
+</p>
+
+<p>
+Intelligence is not only computation. It is relationship.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
