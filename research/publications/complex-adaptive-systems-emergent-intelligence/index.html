@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Complex Adaptive Systems and Emergent Intelligence | ANUMA</title>
+
+<link rel="stylesheet" href="../../../css/style.css">
+
+<style>
+.publication-hero {
+    padding: 120px 0 70px;
+    border-bottom: 1px solid rgba(198,164,82,0.18);
+}
+
+.publication-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0 35px;
+}
+
+.meta-tag {
+    border: 1px solid rgba(198,164,82,0.35);
+    padding: 8px 14px;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #c6a452;
+}
+
+.publication-content {
+    max-width: 900px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+.publication-content h2 {
+    margin-top: 70px;
+}
+
+.publication-content h3 {
+    margin-top: 40px;
+    color: #c6a452;
+}
+
+.equation {
+    margin: 30px 0;
+    padding: 25px;
+    border-left: 2px solid #c6a452;
+    background: rgba(255,255,255,0.025);
+    font-family: Georgia, serif;
+    font-size: 1.15rem;
+    color: #e0c477;
+    overflow-x: auto;
+}
+
+.definition {
+    margin: 25px 0;
+    padding: 25px;
+    border: 1px solid rgba(198,164,82,0.2);
+    background: rgba(198,164,82,0.025);
+}
+
+.research-note {
+    margin: 35px 0;
+    padding: 25px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.02);
+}
+
+.archive-link {
+    margin-top: 60px;
+    padding-top: 35px;
+    border-top: 1px solid rgba(198,164,82,0.18);
+}
+
+.archive-link a {
+    color: #c6a452;
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-container">
+
+        <a href="../../../index.html" class="logo">ANUMA</a>
+
+        <nav>
+            <a href="../../../index.html#research">Research</a>
+            <a href="../../../core/ANUMA-RTT-001.html">Core</a>
+            <a href="../../../index.html#systems">Systems</a>
+            <a href="../../../index.html#about">About</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="publication-hero">
+
+<div class="container">
+
+<p class="eyebrow">
+ANUMA RESEARCH ARCHIVE · PUBLICATION 007
+</p>
+
+<h1>
+Complex Adaptive Systems and Emergent Intelligence
+</h1>
+
+<p class="hero-subtitle">
+A systems-level formulation of intelligence emerging from interaction,
+adaptation, relational structure and collective dynamics.
+</p>
+
+<div class="publication-meta">
+
+<span class="meta-tag">
+Research ID: ANUMA-CASI-007
+</span>
+
+<span class="meta-tag">
+Proposed Framework
+</span>
+
+<span class="meta-tag">
+Complex Systems
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="publication-content">
+
+
+<h2>Abstract</h2>
+
+<p>
+This document extends the ANUMA research programme from the dynamics of an
+individual system toward populations of interacting systems.
+</p>
+
+<p>
+The central proposition is that when multiple adaptive entities interact
+through evolving relationships, system-level properties may arise that
+cannot be described adequately by examining each component in isolation.
+</p>
+
+<p>
+The framework therefore investigates emergence, adaptation, network
+structure, feedback, collective behaviour and distributed intelligence as
+interacting components of complex adaptive systems.
+</p>
+
+<div class="research-note">
+
+<strong>Scientific status</strong>
+
+<p>
+The mathematical structures in this document are proposed models for the
+ANUMA research programme. The existence or magnitude of emergent
+intelligence in any particular system remains an empirical question.
+</p>
+
+</div>
+
+
+<h2>1. From Individual Systems to Populations</h2>
+
+<p>
+The preceding RTT formulation represents an individual adaptive system as:
+</p>
+
+<div class="equation">
+S<sub>t</sub> =
+(X<sub>t</sub>, R<sub>t</sub>, M<sub>t</sub>, C<sub>t</sub>, A<sub>t</sub>)
+</div>
+
+<p>
+A complex adaptive system contains multiple such entities.
+Let:
+</p>
+
+<div class="equation">
+V = {1,2,...,N}
+</div>
+
+<p>
+represent a population of N interacting entities.
+</p>
+
+<p>
+Each entity i possesses a state:
+</p>
+
+<div class="equation">
+S<sub>i,t</sub> =
+(X<sub>i,t</sub>,R<sub>i,t</sub>,M<sub>i,t</sub>,C<sub>i,t</sub>,A<sub>i,t</sub>)
+</div>
+
+
+<h2>2. Network Representation</h2>
+
+<p>
+The population can be represented as a weighted graph:
+</p>
+
+<div class="equation">
+G<sub>t</sub> =
+(V,E<sub>t</sub>,W<sub>t</sub>)
+</div>
+
+<p>
+where:
+</p>
+
+<ul>
+<li><strong>V</strong> = entities or nodes</li>
+<li><strong>E<sub>t</sub></strong> = relationships between entities</li>
+<li><strong>W<sub>t</sub></strong> = weights associated with relationships</li>
+</ul>
+
+<p>
+The graph itself can evolve over time.
+</p>
+
+
+<h2>3. Adjacency Structure</h2>
+
+<p>
+Let the relationship network be represented by an adjacency matrix:
+</p>
+
+<div class="equation">
+A<sub>t</sub> = [a<sub>ij,t</sub>]
+</div>
+
+<p>
+where a<sub>ij,t</sub> represents the relationship between entity i and
+entity j at time t.
+</p>
+
+<p>
+The value may represent interaction frequency, communication strength,
+dependency, influence or another operationally defined relationship.
+</p>
+
+
+<h2>4. Local Dynamics</h2>
+
+<p>
+Each entity may have its own local transition function:
+</p>
+
+<div class="equation">
+X<sub>i,t+1</sub>
+=
+F<sub>i</sub>(
+X<sub>i,t</sub>,
+U<sub>i,t</sub>,
+R<sub>i,t</sub>,
+M<sub>i,t</sub>,
+C<sub>i,t</sub>
+)
+</div>
+
+<p>
+However, the state of an entity may also depend upon neighbouring entities.
+</p>
+
+<div class="equation">
+X<sub>i,t+1</sub>
+=
+F<sub>i</sub>(
+X<sub>i,t</sub>,
+Σ<sub>j</sub>a<sub>ij,t</sub>X<sub>j,t</sub>,
+M<sub>i,t</sub>,
+C<sub>i,t</sub>
+)
+</div>
+
+
+<h2>5. Relational Coupling</h2>
+
+<p>
+The neighbourhood contribution can be represented as:
+</p>
+
+<div class="equation">
+R<sub>i,t</sub>
+=
+Σ<sub>j</sub>
+a<sub>ij,t</sub>
+φ(X<sub>i,t</sub>,X<sub>j,t</sub>)
+</div>
+
+<p>
+where φ represents an interaction or relational function.
+</p>
+
+<p>
+This allows the system to distinguish between the internal state of an
+entity and the structure of its relationships.
+</p>
+
+
+<h2>6. Emergence</h2>
+
+<p>
+Let the collective state of the system be:
+</p>
+
+<div class="equation">
+X<sub>system,t</sub>
+=
+Ψ(X<sub>1,t</sub>,...,X<sub>N,t</sub>,G<sub>t</sub>)
+</div>
+
+<p>
+An emergent property is a system-level characteristic generated by the
+interaction of components and their relationships.
+</p>
+
+<p>
+Within the ANUMA framework, intelligence is therefore proposed as potentially
+distributed across:
+</p>
+
+<div class="equation">
+I<sub>system</sub>
+=
+Σ<sub>i</sub>I<sub>i</sub>
++
+I<sub>relations</sub>
++
+I<sub>emergence</sub>
+</div>
+
+
+<h2>7. Component Intelligence</h2>
+
+<p>
+The first term represents the intelligence or adaptive capacity of
+individual components:
+</p>
+
+<div class="equation">
+Σ<sub>i</sub>I<sub>i</sub>
+</div>
+
+<p>
+This preserves the importance of individual agents.
+</p>
+
+<p>
+The framework does not require collective intelligence to replace individual
+intelligence.
+</p>
+
+
+<h2>8. Relational Intelligence</h2>
+
+<p>
+The second term represents information and adaptive structure contained in
+relationships:
+</p>
+
+<div class="equation">
+I<sub>relations</sub>
+</div>
+
+<p>
+This may include communication pathways, dependencies, cooperation,
+competition, coordination and persistent interaction patterns.
+</p>
+
+<p>
+Its operational definition depends upon the system being studied.
+</p>
+
+
+<h2>9. Emergent Intelligence</h2>
+
+<p>
+The third term represents system-level behaviour that arises through
+interaction:
+</p>
+
+<div class="equation">
+I<sub>emergence</sub>
+</div>
+
+<p>
+The framework proposes that this term should not simply be assumed.
+Instead, it should be investigated by determining whether system-level
+predictive or adaptive performance exceeds what can be explained from
+isolated components alone.
+</p>
+
+
+<h2>10. Adaptation</h2>
+
+<p>
+A complex adaptive system changes in response to its environment and its
+internal interactions.
+</p>
+
+<p>
+The network itself can therefore evolve:
+</p>
+
+<div class="equation">
+G<sub>t+1</sub>
+=
+Γ(G<sub>t</sub>,X<sub>t</sub>,C<sub>t</sub>)
+</div>
+
+<p>
+The system consequently contains two coupled processes:
+</p>
+
+<div class="equation">
+State Evolution
++
+Relationship Evolution
+</div>
+
+
+<h2>11. Co-Evolution</h2>
+
+<p>
+When states and relationships change together, the system becomes
+co-evolutionary.
+</p>
+
+<div class="equation">
+X<sub>t+1</sub>
+=
+F(X<sub>t</sub>,G<sub>t</sub>,C<sub>t</sub>)
+</div>
+
+<div class="equation">
+G<sub>t+1</sub>
+=
+Γ(G<sub>t</sub>,X<sub>t</sub>,C<sub>t</sub>)
+</div>
+
+<p>
+A change in network structure can therefore alter future states, while
+changes in states can alter the network itself.
+</p>
+
+
+<h2>12. Feedback</h2>
+
+<p>
+The basic feedback loop is:
+</p>
+
+<div class="equation">
+State
+→
+Interaction
+→
+Relationship
+→
+Collective State
+→
+New Interaction
+</div>
+
+<p>
+Repeated feedback can produce stable patterns, oscillations, adaptation,
+specialisation or other system-level dynamics.
+</p>
+
+
+<h2>13. Positive and Negative Feedback</h2>
+
+<p>
+A simplified feedback representation is:
+</p>
+
+<div class="equation">
+X<sub>t+1</sub>
+=
+X<sub>t</sub>
++
+F(X<sub>t</sub>,R<sub>t</sub>,C<sub>t</sub>)
+</div>
+
+<p>
+Depending upon the function F, feedback may amplify an existing pattern or
+counteract it.
+</p>
+
+<p>
+The framework therefore treats feedback as a mechanism to investigate rather
+than assuming that all relational interaction produces beneficial outcomes.
+</p>
+
+
+<h2>14. Network Memory</h2>
+
+<p>
+Relationships can retain historical structure.
+A network may therefore encode information about previous interactions.
+</p>
+
+<div class="equation">
+G<sub>t</sub>
+=
+Γ(G<sub>t-1</sub>,X<sub>t-1</sub>,C<sub>t-1</sub>)
+</div>
+
+<p>
+The present network is consequently partly determined by its history.
+</p>
+
+<p>
+This introduces path dependence into the system.
+</p>
+
+
+<h2>15. Path Dependence</h2>
+
+<p>
+Two systems with similar present states may evolve differently if their
+relational histories differ.
+</p>
+
+<div class="equation">
+X<sub>A,t</sub>
+=
+X<sub>B,t</sub>
+</div>
+
+<p>
+does not necessarily imply:
+</p>
+
+<div class="equation">
+X<sub>A,t+1</sub>
+=
+X<sub>B,t+1</sub>
+</div>
+
+<p>
+if:
+</p>
+
+<div class="equation">
+G<sub>A,t</sub>
+≠
+G<sub>B,t</sub>
+</div>
+
+<p>
+This provides a mathematical representation of historical relational
+dependence.
+</p>
+
+
+<h2>16. Distributed Information</h2>
+
+<p>
+Information in a network may be distributed across multiple nodes.
+</p>
+
+<div class="equation">
+I<sub>network</sub>
+=
+I(X<sub>1</sub>,X<sub>2</sub>,...,X<sub>N</sub>)
+</div>
+
+<p>
+The relevant information may therefore not be located entirely within any
+single component.
+</p>
+
+<p>
+The research question becomes whether collective structure contains
+information that cannot be recovered from isolated node measurements.
+</p>
+
+
+<h2>17. Information-Theoretic Test</h2>
+
+<p>
+The previous publication introduced the conditional mutual information:
+</p>
+
+<div class="equation">
+I(X<sub>t+1</sub>;R<sub>t</sub>|X<sub>t</sub>)
+</div>
+
+<p>
+For a network, the corresponding question can be expanded:
+</p>
+
+<div class="equation">
+I(X<sub>system,t+1</sub>;
+G<sub>t</sub>
+|
+X<sub>system,t</sub>)
+</div>
+
+<p>
+A positive value would indicate statistical dependence between network
+structure and future system state after conditioning on the current system
+state.
+</p>
+
+
+<h2>18. Emergence as Predictive Gain</h2>
+
+<p>
+One possible operationalisation of emergence is predictive improvement.
+</p>
+
+<div class="equation">
+ΔP
+=
+P<sub>network</sub>
+−
+P<sub>individual</sub>
+</div>
+
+<p>
+where the two models are evaluated under comparable conditions.
+</p>
+
+<p>
+A positive ΔP would indicate that network information improves the selected
+prediction task.
+</p>
+
+<p>
+This would not, by itself, prove a general theory of emergence. It would
+provide evidence for a specific predictive contribution under the tested
+conditions.
+</p>
+
+
+<h2>19. Multi-Agent Dynamics</h2>
+
+<p>
+For N agents:
+</p>
+
+<div class="equation">
+X<sub>t+1</sub>
+=
+F(X<sub>t</sub>,A<sub>t</sub>,G<sub>t</sub>,C<sub>t</sub>)
+</div>
+
+<p>
+where:
+</p>
+
+<ul>
+<li>X<sub>t</sub> is the vector of agent states</li>
+<li>A<sub>t</sub> is the vector of actions</li>
+<li>G<sub>t</sub> is the interaction network</li>
+<li>C<sub>t</sub> is shared or distributed context</li>
+</ul>
+
+<p>
+This formulation creates a bridge between RTT and multi-agent systems.
+</p>
+
+
+<h2>20. Local Rules and Global Behaviour</h2>
+
+<p>
+Complex systems can be investigated by specifying relatively simple local
+transition rules and observing the resulting global dynamics.
+</p>
+
+<div class="equation">
+Local Rule
++
+Interaction
++
+Feedback
+→
+Collective Behaviour
+</div>
+
+<p>
+The research programme therefore distinguishes the rules governing
+individual entities from the properties observed at the collective level.
+</p>
+
+
+<h2>21. Critical Transitions</h2>
+
+<p>
+A system may change behaviour when parameters cross particular thresholds.
+</p>
+
+<p>
+Let λ represent a control parameter:
+</p>
+
+<div class="equation">
+X<sub>t+1</sub>
+=
+F(X<sub>t</sub>,λ)
+</div>
+
+<p>
+Changes in λ may produce transitions between qualitatively different
+dynamical regimes.
+</p>
+
+<p>
+Such transitions are relevant to the study of adaptation and collective
+organisation.
+</p>
+
+
+<h2>22. Resonance Across Networks</h2>
+
+<p>
+The RTT resonance concept can be extended from individual systems to
+networks.
+</p>
+
+<div class="equation">
+ρ<sub>network</sub>(t)
+=
+Alignment(
+X<sub>t</sub>,
+G<sub>t</sub>,
+C<sub>t</sub>
+)
+</div>
+
+<p>
+This represents a proposed network-level quantity describing alignment
+between system states, relational structure and context.
+</p>
+
+<p>
+Its exact definition remains an open mathematical problem.
+</p>
+
+
+<h2>23. Collective Transformation</h2>
+
+<p>
+A network-level transformation can be expressed as:
+</p>
+
+<div class="equation">
+X<sub>system,t+1</sub>
+=
+X<sub>system,t</sub>
++
+αρ<sub>network,t</sub>G<sub>t</sub>
++
+βC<sub>t</sub>
++
+ε<sub>t</sub>
+</div>
+
+<p>
+This is a conceptual extension of the individual RTT transformation model
+and requires operationalisation before empirical use.
+</p>
+
+
+<h2>24. Biological Systems</h2>
+
+<p>
+Biological systems provide a natural domain for studying distributed
+interaction, adaptation and emergence.
+</p>
+
+<p>
+Examples of relevant structures include interacting cells, organisms,
+ecological networks and other multi-component biological systems.
+</p>
+
+<p>
+The ANUMA framework does not assume that these systems possess a single
+form of intelligence. Rather, it proposes that their collective dynamics
+can be investigated using relational and information-theoretic methods.
+</p>
+
+
+<h2>25. Social and Organisational Systems</h2>
+
+<p>
+Human groups and organisations can similarly be represented as networks of
+interacting entities.
+</p>
+
+<div class="equation">
+G =
+(V,E,W)
+</div>
+
+<p>
+where nodes may represent people, teams, institutions or other relevant
+entities and edges represent defined interactions.
+</p>
+
+<p>
+The appropriate interpretation depends on the empirical system and the
+variables being measured.
+</p>
+
+
+<h2>26. Technological Systems</h2>
+
+<p>
+Distributed computational systems also contain interacting nodes.
+</p>
+
+<p>
+Examples include:
+</p>
+
+<ul>
+<li>sensor networks</li>
+<li>multi-agent systems</li>
+<li>distributed computing architectures</li>
+<li>robotic networks</li>
+<li>ambient computing environments</li>
+</ul>
+
+<p>
+These systems provide potential experimental environments for testing
+relational information and adaptive network dynamics.
+</p>
+
+
+<h2>27. Civilizational Scale</h2>
+
+<p>
+The framework can be recursively extended to larger scales.
+</p>
+
+<div class="equation">
+Individual
+→
+Group
+→
+Organisation
+→
+Institution
+→
+Society
+→
+Civilizational Network
+</div>
+
+<p>
+At each scale, the system consists of components connected through
+relationships and embedded within a wider context.
+</p>
+
+<p>
+This does not imply that intelligence at one scale is identical to
+intelligence at another. It establishes a common structural language for
+investigation.
+</p>
+
+
+<h2>28. Recursive Systems</h2>
+
+<p>
+If a system contains subsystems that are themselves adaptive systems, a
+recursive representation becomes possible:
+</p>
+
+<div class="equation">
+System<sub>n+1</sub>
+=
+F(
+System<sub>n</sub>,
+Relationships<sub>n</sub>,
+Context<sub>n+1</sub>
+)
+</div>
+
+<p>
+This creates a multiscale architecture in which local and global dynamics
+interact.
+</p>
+
+
+<h2>29. Emergence and Reduction</h2>
+
+<div class="definition">
+
+<p>
+The framework does not claim that emergent properties violate reductionist
+analysis.
+</p>
+
+<p>
+Instead, it proposes investigating whether system-level behaviour requires
+explicit representation of interactions, relationships and collective
+dynamics in addition to component-level variables.
+</p>
+
+</div>
+
+
+<h2>30. Experimental Programme</h2>
+
+<p>
+A proposed research sequence is:
+</p>
+
+<ol>
+
+<li>
+Construct a population of interacting agents.
+</li>
+
+<li>
+Define local state-transition rules.
+</li>
+
+<li>
+Define the relational network.
+</li>
+
+<li>
+Allow the network to evolve.
+</li>
+
+<li>
+Measure individual performance.
+</li>
+
+<li>
+Measure collective performance.
+</li>
+
+<li>
+Compare individual-only and network-aware models.
+</li>
+
+<li>
+Estimate information contributed by network structure.
+</li>
+
+<li>
+Investigate conditions associated with emergent behaviour.
+</li>
+
+</ol>
+
+
+<h2>31. Anuma Learning Station</h2>
+
+<p>
+The Anuma Learning Station can function as a physical experimental
+environment for this research direction.
+</p>
+
+<p>
+Multiple sensing and interaction components can be treated as nodes in a
+local network:
+</p>
+
+<div class="equation">
+Sensors
+→
+Local States
+→
+Relationships
+→
+Context
+→
+Collective Response
+</div>
+
+<p>
+The purpose is not to assume that a network is intelligent merely because
+it contains multiple sensors. The experimental objective is to determine
+whether relational organisation produces measurable changes in prediction,
+adaptation or coordination.
+</p>
+
+
+<h2>32. Living Intelligence Architecture</h2>
+
+<p>
+The resulting architecture can be represented as:
+</p>
+
+<div class="equation">
+Environment
+→
+Entities
+→
+Relationships
+→
+Information Flow
+→
+Adaptation
+→
+Emergence
+→
+New Environment
+</div>
+
+<p>
+This creates a feedback loop in which the system modifies the conditions
+under which its future behaviour occurs.
+</p>
+
+
+<h2>33. Research Questions</h2>
+
+<ul>
+
+<li>
+When does interaction produce measurable system-level properties?
+</li>
+
+<li>
+Can emergent behaviour be predicted from relational structure?
+</li>
+
+<li>
+How does changing network topology alter system dynamics?
+</li>
+
+<li>
+Can network structure contain predictive information beyond individual
+states?
+</li>
+
+<li>
+How does memory influence collective adaptation?
+</li>
+
+<li>
+Can resonance be defined at multiple levels of organisation?
+</li>
+
+<li>
+How does intelligence scale from individual to collective systems?
+</li>
+
+</ul>
+
+
+<h2>34. Scientific Positioning</h2>
+
+<div class="definition">
+
+<p>
+<strong>Established foundations</strong><br>
+Graph theory, network science, dynamical systems, multi-agent modelling,
+information theory and complex-systems analysis provide established
+mathematical and scientific tools.
+</p>
+
+<p>
+<strong>Proposed framework</strong><br>
+The decomposition
+I<sub>system</sub> = ΣI<sub>i</sub> + I<sub>relations</sub> +
+I<sub>emergence</sub> is proposed within the ANUMA research programme.
+</p>
+
+<p>
+<strong>Testable hypotheses</strong><br>
+The predictive and adaptive contributions of relational structure can be
+tested through controlled simulations and experiments.
+</p>
+
+</div>
+
+
+<h2>35. Open Problems</h2>
+
+<ul>
+
+<li>
+How should emergent intelligence be operationally defined?
+</li>
+
+<li>
+How can genuine emergence be distinguished from aggregation?
+</li>
+
+<li>
+What network measures best capture relational information?
+</li>
+
+<li>
+How should resonance be defined across heterogeneous networks?
+</li>
+
+<li>
+What mathematical conditions generate stable collective organisation?
+</li>
+
+<li>
+How does intelligence change across scales of organisation?
+</li>
+
+<li>
+Can a common framework connect biological, social and technological
+adaptive systems without assuming that they are equivalent?
+</li>
+
+</ul>
+
+
+<h2>36. Conclusion</h2>
+
+<p>
+Complex adaptive systems provide the next scale of analysis for the ANUMA
+research programme.
+</p>
+
+<p>
+The central mathematical transition is:
+</p>
+
+<div class="equation">
+Individual Dynamics
+→
+Network Dynamics
+→
+Collective Dynamics
+→
+Emergent Behaviour
+</div>
+
+<p>
+The framework proposes that relationships should be treated as explicit
+objects of analysis rather than merely as background conditions.
+</p>
+
+<p>
+The resulting research programme connects RTT, relational intelligence,
+information theory, network science and living intelligence into a common
+experimental direction.
+</p>
+
+
+<h2>Suggested Citation</h2>
+
+<p>
+Adegunloye Esan, Sean.
+<strong>
+Complex Adaptive Systems and Emergent Intelligence.
+</strong>
+ANUMA Independent Research Core, Research Document ANUMA-CASI-007.
+</p>
+
+
+<div class="archive-link">
+
+<p>
+<strong>Continue the research archive:</strong>
+</p>
+
+<p>
+<a href="../dynamical-systems-resonance-transformation/index.html">
+← Publication 006 — Dynamical Systems and Resonance Transformation
+</a>
+</p>
+
+<p>
+<a href="../index.html">
+← Return to Publications Archive
+</a>
+</p>
+
+<p>
+<a href="../../../core/ANUMA-RTT-001.html">
+→ Return to ANUMA Research Core
+</a>
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+
+<div class="container">
+
+<p>
+ANUMA · Independent Research Core
+</p>
+
+<p>
+Intelligence is not only computation. It is relationship.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
