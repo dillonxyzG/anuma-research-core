@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resonance Transformation Theory | ANUMA Research</title>
+
+    <meta name="description"
+          content="Resonance Transformation Theory — a mathematical research framework investigating how relational alignment, context and resonance may contribute to transformation in evolving systems.">
+
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <style>
+        .paper-hero {
+            padding: 110px 0 70px;
+            border-bottom: 1px solid rgba(212,175,55,0.18);
+        }
+
+        .paper-label {
+            color: #c9a227;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            margin-bottom: 18px;
+        }
+
+        .paper-title {
+            max-width: 1050px;
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            line-height: 1.02;
+            margin-bottom: 25px;
+        }
+
+        .paper-subtitle {
+            max-width: 850px;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            opacity: 0.78;
+        }
+
+        .paper-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 35px;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        .paper-body {
+            max-width: 900px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .paper-body section {
+            margin-bottom: 80px;
+        }
+
+        .paper-body h2 {
+            color: #c9a227;
+            font-size: 1.65rem;
+            margin-bottom: 25px;
+        }
+
+        .paper-body h3 {
+            font-size: 1.15rem;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        .paper-body p {
+            font-size: 1.03rem;
+            line-height: 1.9;
+            opacity: 0.88;
+            margin-bottom: 20px;
+        }
+
+        .paper-body ul {
+            padding-left: 25px;
+        }
+
+        .paper-body li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+            opacity: 0.86;
+        }
+
+        .abstract {
+            border-left: 2px solid #c9a227;
+            padding: 25px 30px;
+            background: rgba(212,175,55,0.045);
+            margin: 50px 0;
+        }
+
+        .abstract p {
+            margin-bottom: 18px;
+        }
+
+        .abstract p:last-child {
+            margin-bottom: 0;
+        }
+
+        .principle {
+            font-size: clamp(1.5rem, 3vw, 2.3rem);
+            line-height: 1.35;
+            color: #d6b44a;
+            text-align: center;
+            padding: 45px 20px;
+            margin: 45px 0;
+            border-top: 1px solid rgba(212,175,55,0.2);
+            border-bottom: 1px solid rgba(212,175,55,0.2);
+        }
+
+        .equation {
+            margin: 30px 0;
+            padding: 28px 20px;
+            background: #090909;
+            border: 1px solid rgba(212,175,55,0.2);
+            text-align: center;
+            overflow-x: auto;
+        }
+
+        .equation code {
+            color: #e0bd52;
+            font-family: "Times New Roman", serif;
+            font-size: 1.28rem;
+            white-space: nowrap;
+        }
+
+        .definition {
+            padding: 25px;
+            margin: 25px 0;
+            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.02);
+        }
+
+        .definition strong {
+            color: #c9a227;
+        }
+
+        .hypothesis {
+            border: 1px solid rgba(212,175,55,0.28);
+            padding: 35px;
+            background: rgba(212,175,55,0.035);
+        }
+
+        .status {
+            display: inline-block;
+            border: 1px solid rgba(212,175,55,0.4);
+            padding: 7px 12px;
+            color: #c9a227;
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .citation-box {
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 30px;
+            background: rgba(255,255,255,0.025);
+        }
+
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .related-links a {
+            display: inline-block;
+            border: 1px solid rgba(212,175,55,0.35);
+            padding: 10px 15px;
+            color: #c9a227;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        .related-links a:hover {
+            background: rgba(212,175,55,0.08);
+        }
+
+        .paper-footer {
+            border-top: 1px solid rgba(212,175,55,0.15);
+            padding: 50px 20px 80px;
+            text-align: center;
+        }
+
+        .paper-footer p {
+            opacity: 0.6;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-container">
+
+        <a href="../../../" class="logo">ANUMA</a>
+
+        <nav>
+            <a href="../../../">Home</a>
+            <a href="../../programme/">Programme</a>
+            <a href="../">Publications</a>
+            <a href="../../../core/ANUMA-RTT-001.html">Research Core</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="paper-hero">
+        <div class="container">
+
+            <div class="paper-label">
+                ANUMA RESEARCH ARCHIVE · WORKING PAPER
+            </div>
+
+            <h1 class="paper-title">
+                Resonance Transformation Theory
+            </h1>
+
+            <p class="paper-subtitle">
+                A mathematical framework for investigating how relational
+                alignment, context and resonance may contribute to
+                transformation in evolving systems.
+            </p>
+
+            <div class="paper-meta">
+                <span>Author: Sean Adegunloye Esan</span>
+                <span>ANUMA Independent Research Core</span>
+                <span>Research ID: ANUMA-RTT-002</span>
+                <span>Document Status: Proposed Framework</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <article class="paper-body">
+
+
+        <!-- ABSTRACT -->
+
+        <section>
+
+            <div class="status">
+                Abstract
+            </div>
+
+            <div class="abstract">
+
+                <p>
+                    Resonance Transformation Theory (RTT) is a proposed
+                    mathematical research framework for investigating the
+                    relationship between system state, relational structure,
+                    context, memory, agency and transformation.
+                </p>
+
+                <p>
+                    The framework begins from the premise that an evolving
+                    intelligent system cannot always be adequately described
+                    by its current state alone. Relational structure,
+                    historical information and contextual conditions may
+                    influence how the system changes over time.
+                </p>
+
+                <p>
+                    RTT introduces a proposed resonance coefficient,
+                    ρ(t), representing the degree of alignment between
+                    relevant relational and contextual structures. A
+                    transformation equation is then formulated to investigate
+                    whether relational alignment can contribute measurably
+                    to changes in system state.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CORE PROPOSITION -->
+
+        <section>
+
+            <h2>1. Core Proposition</h2>
+
+            <div class="principle">
+                Transformation is not only a function of state;
+                it may also depend on relationship, context and resonance.
+            </div>
+
+            <p>
+                The central research problem is to determine whether the
+                structure of relationships surrounding a system can
+                contribute to the way that system transforms through time.
+            </p>
+
+            <p>
+                RTT therefore treats transformation as a dynamic process
+                rather than merely a sequence of isolated outputs.
+            </p>
+
+            <p>
+                The framework connects this proposition to the broader
+                ANUMA principle:
+            </p>
+
+            <div class="principle">
+                Transactions execute actions; relationships construct intelligence.
+            </div>
+
+        </section>
+
+
+        <!-- SYSTEM STATE -->
+
+        <section>
+
+            <h2>2. The Intelligent System</h2>
+
+            <p>
+                RTT represents an evolving intelligent system as:
+            </p>
+
+            <div class="equation">
+                <code>
+                    S<sub>t</sub> =
+                    (X<sub>t</sub>, R<sub>t</sub>, M<sub>t</sub>, C<sub>t</sub>, A<sub>t</sub>)
+                </code>
+            </div>
+
+            <p>
+                where:
+            </p>
+
+            <ul>
+                <li>
+                    <strong>X<sub>t</sub></strong> — state of the system at time t
+                </li>
+
+                <li>
+                    <strong>R<sub>t</sub></strong> — relational structure
+                </li>
+
+                <li>
+                    <strong>M<sub>t</sub></strong> — memory or retained history
+                </li>
+
+                <li>
+                    <strong>C<sub>t</sub></strong> — contextual conditions
+                </li>
+
+                <li>
+                    <strong>A<sub>t</sub></strong> — agency or available action
+                </li>
+            </ul>
+
+            <p>
+                The system is therefore represented as more than a state
+                variable. Its relational, historical and contextual
+                dimensions become part of the state description.
+            </p>
+
+        </section>
+
+
+        <!-- DYNAMIC TRANSITION -->
+
+        <section>
+
+            <h2>3. Dynamic Transformation</h2>
+
+            <p>
+                A general system transition can be represented as:
+            </p>
+
+            <div class="equation">
+                <code>
+                    S<sub>t+1</sub> =
+                    F(X<sub>t</sub>, R<sub>t</sub>, M<sub>t</sub>,
+                    C<sub>t</sub>, A<sub>t</sub>)
+                </code>
+            </div>
+
+            <p>
+                RTT extends this representation by introducing resonance:
+            </p>
+
+            <div class="equation">
+                <code>
+                    S<sub>t+1</sub> =
+                    F(X<sub>t</sub>, R<sub>t</sub>, M<sub>t</sub>,
+                    C<sub>t</sub>, A<sub>t</sub>, ρ<sub>t</sub>)
+                </code>
+            </div>
+
+            <p>
+                The purpose is not to assume that resonance is already an
+                established physical quantity. Rather, ρ<sub>t</sub> is
+                introduced as a proposed modelling variable whose usefulness
+                can be investigated experimentally.
+            </p>
+
+        </section>
+
+
+        <!-- RESONANCE -->
+
+        <section>
+
+            <h2>4. The Resonance Coefficient</h2>
+
+            <p>
+                RTT proposes a resonance coefficient:
+            </p>
+
+            <div class="equation">
+                <code>
+                    ρ(t) = Alignment(R(t), C(t))
+                </code>
+            </div>
+
+            <p>
+                In this framework, resonance represents a proposed measure
+                of alignment between relational structure and relevant
+                contextual conditions.
+            </p>
+
+            <div class="definition">
+
+                <strong>Interpretive principle</strong>
+
+                <p>
+                    Greater relational alignment may correspond to greater
+                    coherence between the structure of the system's
+                    relationships and the context in which transformation
+                    occurs.
+                </p>
+
+            </div>
+
+            <p>
+                The precise mathematical definition of Alignment remains an
+                empirical and modelling question. Different systems may
+                require different operationalisations.
+            </p>
+
+        </section>
+
+
+        <!-- TRANSFORMATION EQUATION -->
+
+        <section>
+
+            <h2>5. Proposed Transformation Equation</h2>
+
+            <p>
+                A central RTT formulation is:
+            </p>
+
+            <div class="equation">
+                <code>
+                    X<sub>t+1</sub> =
+                    X<sub>t</sub>
+                    + αρ<sub>t</sub>R<sub>t</sub>
+                    + βC<sub>t</sub>
+                    + ε<sub>t</sub>
+                </code>
+            </div>
+
+            <p>
+                where:
+            </p>
+
+            <ul>
+
+                <li>
+                    <strong>X<sub>t</sub></strong> is the current system state;
+                </li>
+
+                <li>
+                    <strong>R<sub>t</sub></strong> is relational structure;
+                </li>
+
+                <li>
+                    <strong>ρ<sub>t</sub></strong> is the proposed resonance
+                    coefficient;
+                </li>
+
+                <li>
+                    <strong>C<sub>t</sub></strong> is contextual influence;
+                </li>
+
+                <li>
+                    <strong>α</strong> and <strong>β</strong> are model
+                    parameters;
+                </li>
+
+                <li>
+                    <strong>ε<sub>t</sub></strong> represents residual or
+                    unmodelled effects.
+                </li>
+
+            </ul>
+
+            <p>
+                The equation should be interpreted as a proposed research
+                model rather than a confirmed law of transformation.
+            </p>
+
+        </section>
+
+
+        <!-- INTERPRETATION -->
+
+        <section>
+
+            <h2>6. Interpretation of Transformation</h2>
+
+            <p>
+                Under the proposed formulation, transformation is produced
+                through the interaction of several components.
+            </p>
+
+            <div class="equation">
+                <code>
+                    Current State
+                    +
+                    Relational Influence
+                    +
+                    Context
+                    +
+                    Residual Dynamics
+                    →
+                    Future State
+                </code>
+            </div>
+
+            <p>
+                The resonance term modifies the contribution attributed to
+                relational structure.
+            </p>
+
+            <p>
+                This creates a research pathway for testing whether
+                relational alignment has an observable relationship with
+                subsequent system transformation.
+            </p>
+
+        </section>
+
+
+        <!-- RELATIONSHIP -->
+
+        <section>
+
+            <h2>7. Relationship as a Dynamic Variable</h2>
+
+            <p>
+                A key implication of RTT is that relationships should not
+                necessarily be treated as fixed background structure.
+            </p>
+
+            <p>
+                The relational structure itself may evolve:
+            </p>
+
+            <div class="equation">
+                <code>
+                    R<sub>t+1</sub> = G(R<sub>t</sub>, X<sub>t</sub>, C<sub>t</sub>)
+                </code>
+            </div>
+
+            <p>
+                Likewise, memory may evolve as new interactions occur:
+            </p>
+
+            <div class="equation">
+                <code>
+                    M<sub>t+1</sub> = H(M<sub>t</sub>, X<sub>t</sub>, R<sub>t</sub>)
+                </code>
+            </div>
+
+            <p>
+                This means that transformation may alter the very
+                relationships and memories that subsequently influence
+                transformation.
+            </p>
+
+        </section>
+
+
+        <!-- FEEDBACK -->
+
+        <section>
+
+            <h2>8. The Transformation Loop</h2>
+
+            <p>
+                RTT can therefore be represented as an evolving feedback
+                process:
+            </p>
+
+            <div class="principle">
+                Context → Relationship → Resonance → Transformation →
+                Memory → Future Context
+            </div>
+
+            <p>
+                The output of one cycle becomes part of the conditions
+                influencing the next cycle.
+            </p>
+
+            <p>
+                This introduces temporal continuity into the model and
+                connects RTT with the broader investigation of living and
+                adaptive intelligence.
+            </p>
+
+        </section>
+
+
+        <!-- EXISTENTIAL INTELLIGENCE -->
+
+        <section>
+
+            <h2>9. Existential Intelligence</h2>
+
+            <p>
+                RTT is also connected to the proposed ANUMA formulation of
+                existential intelligence:
+            </p>
+
+            <div class="equation">
+                <code>
+                    E<sub>I</sub> = f(C, M, R, A)
+                </code>
+            </div>
+
+            <p>
+                Here existential intelligence is represented as a proposed
+                function of:
+            </p>
+
+            <ul>
+
+                <li>context;</li>
+
+                <li>memory;</li>
+
+                <li>relationship;</li>
+
+                <li>agency.</li>
+
+            </ul>
+
+            <p>
+                RTT supplies a transformation-oriented mathematical layer
+                through which these variables may be studied dynamically.
+            </p>
+
+        </section>
+
+
+        <!-- INFORMATION THEORY -->
+
+        <section>
+
+            <h2>10. Information-Theoretic Investigation</h2>
+
+            <p>
+                One of the central empirical questions is whether relational
+                information contains predictive information about future
+                states after accounting for the current state.
+            </p>
+
+            <div class="hypothesis">
+
+                <div class="equation">
+                    <code>
+                        I(X<sub>t+1</sub>;
+                        R<sub>t</sub>, M<sub>t</sub>
+                        |
+                        X<sub>t</sub>) &gt; 0
+                    </code>
+                </div>
+
+                <p>
+                    If supported under a valid experimental design, this
+                    would indicate that relational structure and memory
+                    provide information about the future state beyond the
+                    information contained in the current state alone.
+                </p>
+
+                <p>
+                    This is an empirical question rather than an assumption
+                    of the theory.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPERIMENT -->
+
+        <section>
+
+            <h2>11. Experimental Programme</h2>
+
+            <p>
+                RTT proposes comparison between a baseline model and a
+                relational-resonance model.
+            </p>
+
+            <h3>Baseline model</h3>
+
+            <div class="equation">
+                <code>
+                    X<sub>t+1</sub> = F(X<sub>t</sub>)
+                </code>
+            </div>
+
+            <p>
+                The baseline uses the current state as the principal
+                predictor of the future state.
+            </p>
+
+            <h3>Relational model</h3>
+
+            <div class="equation">
+                <code>
+                    X<sub>t+1</sub> =
+                    F(X<sub>t</sub>, R<sub>t</sub>,
+                    M<sub>t</sub>, C<sub>t</sub>, ρ<sub>t</sub>)
+                </code>
+            </div>
+
+            <p>
+                Predictive performance can then be compared between the two
+                formulations.
+            </p>
+
+            <div class="equation">
+                <code>
+                    ΔP =
+                    P<sub>relational</sub>
+                    −
+                    P<sub>baseline</sub>
+                </code>
+            </div>
+
+            <p>
+                The design should define the prediction target, sampling
+                process, evaluation metric, control variables and statistical
+                procedure before conclusions are drawn.
+            </p>
+
+        </section>
+
+
+        <!-- NETWORK -->
+
+        <section>
+
+            <h2>12. RTT and Network Structure</h2>
+
+            <p>
+                The framework can be represented using a network:
+            </p>
+
+            <div class="equation">
+                <code>
+                    G = (V, E, W)
+                </code>
+            </div>
+
+            <p>
+                where:
+            </p>
+
+            <ul>
+                <li><strong>V</strong> represents system nodes;</li>
+                <li><strong>E</strong> represents relationships;</li>
+                <li><strong>W</strong> represents relationship weights.</li>
+            </ul>
+
+            <p>
+                Because relationships may evolve, the graph itself can
+                become dynamic:
+            </p>
+
+            <div class="equation">
+                <code>
+                    G<sub>t</sub> → G<sub>t+1</sub>
+                </code>
+            </div>
+
+            <p>
+                RTT therefore provides a possible mathematical bridge
+                between relational intelligence, network science and
+                evolving complex systems.
+            </p>
+
+        </section>
+
+
+        <!-- LIVING INTELLIGENCE -->
+
+        <section>
+
+            <h2>13. From Resonance to Living Intelligence</h2>
+
+            <p>
+                When multiple interacting components continuously modify
+                one another's states and relationships, system-level
+                properties may emerge.
+            </p>
+
+            <div class="equation">
+                <code>
+                    I<sub>system</sub> =
+                    ΣI<sub>i</sub>
+                    +
+                    I<sub>relations</sub>
+                    +
+                    I<sub>emergence</sub>
+                </code>
+            </div>
+
+            <p>
+                RTT contributes to this wider programme by asking whether
+                relational alignment and transformation can be represented
+                mathematically and investigated experimentally.
+            </p>
+
+        </section>
+
+
+        <!-- ANUMA -->
+
+        <section>
+
+            <h2>14. ANUMA Architecture</h2>
+
+            <p>
+                Within the ANUMA research programme, RTT forms part of a
+                larger architecture:
+            </p>
+
+            <div class="principle">
+                Context → Relationship → Resonance → Transformation →
+                Memory → Future Context
+            </div>
+
+            <p>
+                This architecture connects the mathematical framework to
+                experimental systems such as the Anuma Learning Station,
+                where environmental, human, educational and relational
+                signals can potentially be observed and analysed.
+            </p>
+
+        </section>
+
+
+        <!-- SCIENTIFIC POSITIONING -->
+
+        <section>
+
+            <h2>15. Scientific Positioning</h2>
+
+            <div class="definition">
+
+                <strong>Established scientific foundations</strong>
+
+                <p>
+                    RTT draws conceptually on established areas including
+                    dynamical systems, network science, information theory,
+                    complex systems, machine learning and distributed
+                    intelligence.
+                </p>
+
+            </div>
+
+            <div class="definition">
+
+                <strong>Proposed framework</strong>
+
+                <p>
+                    Resonance Transformation Theory and its mathematical
+                    representations are proposed as a research framework.
+                </p>
+
+            </div>
+
+            <div class="definition">
+
+                <strong>Testable hypotheses</strong>
+
+                <p>
+                    The predictive contribution of relational structure,
+                    memory, context and resonance remains an empirical
+                    question.
+                </p>
+
+            </div>
+
+            <p>
+                The equations presented here should therefore be treated as
+                candidate models requiring operational definitions,
+                experiments, comparison and validation.
+            </p>
+
+        </section>
+
+
+        <!-- LIMITATIONS -->
+
+        <section>
+
+            <h2>16. Limitations and Open Questions</h2>
+
+            <p>
+                Several questions remain open within the framework.
+            </p>
+
+            <ul>
+
+                <li>
+                    How should resonance be operationally measured?
+                </li>
+
+                <li>
+                    What mathematical definition of relational alignment is
+                    appropriate for different classes of systems?
+                </li>
+
+                <li>
+                    Under what conditions does relational information improve
+                    prediction?
+                </li>
+
+                <li>
+                    How should memory and context be separated empirically?
+                </li>
+
+                <li>
+                    Can nonlinear relational effects be distinguished from
+                    ordinary interaction effects?
+                </li>
+
+                <li>
+                    Which observed effects are genuinely emergent rather
+                    than consequences of unmodelled variables?
+                </li>
+
+            </ul>
+
+            <p>
+                These questions define part of the future experimental
+                programme rather than weaknesses that can be resolved by
+                theoretical assertion alone.
+            </p>
+
+        </section>
+
+
+        <!-- CONCLUSION -->
+
+        <section>
+
+            <h2>17. Conclusion</h2>
+
+            <p>
+                Resonance Transformation Theory proposes a framework for
+                studying transformation in systems whose states are shaped
+                not only by their immediate conditions but also by
+                relationships, memory and context.
+            </p>
+
+            <p>
+                Its central mathematical move is to introduce relational
+                structure and a proposed resonance coefficient into the
+                description of system transformation.
+            </p>
+
+            <p>
+                The framework consequently moves from a static description
+                of state toward an evolving architecture:
+            </p>
+
+            <div class="principle">
+                State → Relationship → Resonance → Transformation → Memory
+            </div>
+
+            <p>
+                The scientific task that follows is empirical: define the
+                variables, construct measurable systems, compare competing
+                models and determine whether the proposed relational and
+                resonance terms provide explanatory or predictive value.
+            </p>
+
+        </section>
+
+
+        <!-- CITATION -->
+
+        <section>
+
+            <h2>18. Citation</h2>
+
+            <div class="citation-box">
+
+                <p>
+                    <strong>Suggested citation:</strong>
+                </p>
+
+                <p>
+                    Adegunloye Esan, Sean.
+                    <em>Resonance Transformation Theory.</em>
+                    ANUMA Independent Research Core.
+                    ANUMA Research Archive.
+                </p>
+
+                <p>
+                    Research ID: ANUMA-RTT-002
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- RELATED RESEARCH -->
+
+        <section>
+
+            <h2>19. Related Research</h2>
+
+            <p>
+                RTT forms part of the wider ANUMA research programme.
+            </p>
+
+            <div class="related-links">
+
+                <a href="../transactional-relational-intelligence/">
+                    Transactional–Relational Intelligence
+                </a>
+
+                <a href="../../transactional-relational/">
+                    Transactional–Relational Research
+                </a>
+
+                <a href="../../existential-intelligence/">
+                    Existential Intelligence
+                </a>
+
+                <a href="../../living-intelligence/">
+                    Living Intelligence
+                </a>
+
+                <a href="../../programme/">
+                    Research Programme
+                </a>
+
+                <a href="../../../prototypes/anuma-learning-station/">
+                    Anuma Learning Station
+                </a>
+
+                <a href="../../../core/ANUMA-RTT-001.html">
+                    Research Core
+                </a>
+
+            </div>
+
+        </section>
+
+    </article>
+
+</main>
+
+
+<footer class="paper-footer">
+
+    <p>
+        ANUMA Independent Research Core
+    </p>
+
+    <p>
+        Independent research identity · Mathematical frameworks ·
+        Experimental programmes · Living intelligence systems
+    </p>
+
+</footer>
+
+</body>
+</html>
