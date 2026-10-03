@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Living Intelligence Systems | ANUMA Research</title>
+
+    <meta name="description"
+          content="Living Intelligence Systems — a proposed research framework for investigating intelligence emerging through relationships, networks, interaction and transformation.">
+
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <style>
+        .paper-hero {
+            padding: 110px 0 70px;
+            border-bottom: 1px solid rgba(212,175,55,0.18);
+        }
+
+        .paper-label {
+            color: #c9a227;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            margin-bottom: 18px;
+        }
+
+        .paper-title {
+            max-width: 1050px;
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            line-height: 1.02;
+            margin-bottom: 25px;
+        }
+
+        .paper-subtitle {
+            max-width: 850px;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            opacity: 0.78;
+        }
+
+        .paper-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 35px;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        .paper-body {
+            max-width: 900px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .paper-body section {
+            margin-bottom: 80px;
+        }
+
+        .paper-body h2 {
+            color: #c9a227;
+            font-size: 1.65rem;
+            margin-bottom: 25px;
+        }
+
+        .paper-body h3 {
+            font-size: 1.15rem;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        .paper-body p {
+            font-size: 1.03rem;
+            line-height: 1.9;
+            opacity: 0.88;
+            margin-bottom: 20px;
+        }
+
+        .paper-body ul {
+            padding-left: 25px;
+        }
+
+        .paper-body li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+            opacity: 0.86;
+        }
+
+        .abstract {
+            border-left: 2px solid #c9a227;
+            padding: 25px 30px;
+            background: rgba(212,175,55,0.045);
+            margin: 50px 0;
+        }
+
+        .abstract p:last-child {
+            margin-bottom: 0;
+        }
+
+        .principle {
+            font-size: clamp(1.5rem, 3vw, 2.3rem);
+            line-height: 1.35;
+            color: #d6b44a;
+            text-align: center;
+            padding: 45px 20px;
+            margin: 45px 0;
+            border-top: 1px solid rgba(212,175,55,0.2);
+            border-bottom: 1px solid rgba(212,175,55,0.2);
+        }
+
+        .equation {
+            margin: 30px 0;
+            padding: 28px 20px;
+            background: #090909;
+            border: 1px solid rgba(212,175,55,0.2);
+            text-align: center;
+            overflow-x: auto;
+        }
+
+        .equation code {
+            color: #e0bd52;
+            font-family: "Times New Roman", serif;
+            font-size: 1.28rem;
+            white-space: nowrap;
+        }
+
+        .definition {
+            padding: 25px;
+            margin: 25px 0;
+            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.02);
+        }
+
+        .definition strong {
+            color: #c9a227;
+        }
+
+        .hypothesis {
+            border: 1px solid rgba(212,175,55,0.28);
+            padding: 35px;
+            background: rgba(212,175,55,0.035);
+        }
+
+        .status {
+            display: inline-block;
+            border: 1px solid rgba(212,175,55,0.4);
+            padding: 7px 12px;
+            color: #c9a227;
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .citation-box {
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 30px;
+            background: rgba(255,255,255,0.025);
+        }
+
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .related-links a {
+            display: inline-block;
+            border: 1px solid rgba(212,175,55,0.35);
+            padding: 10px 15px;
+            color: #c9a227;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        .related-links a:hover {
+            background: rgba(212,175,55,0.08);
+        }
+
+        .paper-footer {
+            border-top: 1px solid rgba(212,175,55,0.15);
+            padding: 50px 20px 80px;
+            text-align: center;
+        }
+
+        .paper-footer p {
+            opacity: 0.6;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-container">
+
+        <a href="../../../" class="logo">ANUMA</a>
+
+        <nav>
+            <a href="../../../">Home</a>
+            <a href="../../programme/">Programme</a>
+            <a href="../">Publications</a>
+            <a href="../../../core/ANUMA-RTT-001.html">Research Core</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="paper-hero">
+        <div class="container">
+
+            <div class="paper-label">
+                ANUMA RESEARCH ARCHIVE · WORKING PAPER
+            </div>
+
+            <h1 class="paper-title">
+                Living Intelligence Systems
+            </h1>
+
+            <p class="paper-subtitle">
+                A proposed framework for investigating intelligence as an
+                emergent property of interacting components, relationships,
+                networks and evolving environments.
+            </p>
+
+            <div class="paper-meta">
+                <span>Author: Sean Adegunloye Esan</span>
+                <span>ANUMA Independent Research Core</span>
+                <span>Research ID: ANUMA-LIS-004</span>
+                <span>Document Status: Proposed Framework</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <article class="paper-body">
+
+
+        <!-- ABSTRACT -->
+
+        <section>
+
+            <div class="status">
+                Abstract
+            </div>
+
+            <div class="abstract">
+
+                <p>
+                    Living Intelligence Systems is a proposed research
+                    framework for investigating intelligence in systems whose
+                    components interact continuously through relationships,
+                    information exchange, adaptation and feedback.
+                </p>
+
+                <p>
+                    The framework extends the transactional–relational and
+                    existential intelligence models from individual or local
+                    system descriptions toward networks and collective
+                    structures.
+                </p>
+
+                <p>
+                    A central proposition is that system-level intelligence
+                    may not be completely represented by the intelligence of
+                    individual components alone. Relational structure and
+                    emergent dynamics may contribute additional properties
+                    that require independent investigation.
+                </p>
+
+                <div class="equation">
+                    <code>
+                        I<sub>system</sub> =
+                        ΣI<sub>i</sub> +
+                        I<sub>relations</sub> +
+                        I<sub>emergence</sub>
+                    </code>
+                </div>
+
+                <p>
+                    The expression is proposed as a research abstraction,
+                    not as an established universal law.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CENTRAL QUESTION -->
+
+        <section>
+
+            <h2>1. The Central Question</h2>
+
+            <div class="principle">
+                Can intelligence emerge from relationships between
+                intelligent or adaptive components?
+            </div>
+
+            <p>
+                Traditional system descriptions may begin with individual
+                components and then examine how they interact.
+            </p>
+
+            <p>
+                The Living Intelligence Systems framework reverses the
+                emphasis by asking whether the relationships themselves can
+                become an important part of the system's intelligence.
+            </p>
+
+            <p>
+                The research problem is therefore not simply to determine
+                how intelligent each component is, but to investigate what
+                happens when those components form a persistent,
+                evolving network.
+            </p>
+
+        </section>
+
+
+        <!-- SYSTEM REPRESENTATION -->
+
+        <section>
+
+            <h2>2. System Representation</h2>
+
+            <p>
+                A living or evolving intelligence system can be represented
+                as a collection of interacting states:
+            </p>
+
+            <div class="equation">
+                <code>
+                    S<sub>t</sub> =
+                    (X<sub>t</sub>, R<sub>t</sub>, M<sub>t</sub>,
+                    C<sub>t</sub>, A<sub>t</sub>)
+                </code>
+            </div>
+
+            <p>
+                where:
+            </p>
+
+            <ul>
+                <li><strong>X<sub>t</sub></strong> — system state;</li>
+                <li><strong>R<sub>t</sub></strong> — relational structure;</li>
+                <li><strong>M<sub>t</sub></strong> — memory;</li>
+                <li><strong>C<sub>t</sub></strong> — context;</li>
+                <li><strong>A<sub>t</sub></strong> — agency.</li>
+            </ul>
+
+            <p>
+                In a living intelligence system, these variables may change
+                continuously as a consequence of interaction.
+            </p>
+
+        </section>
+
+
+        <!-- NETWORK -->
+
+        <section>
+
+            <h2>3. Network Structure</h2>
+
+            <p>
+                The relational architecture can be represented as a graph:
+            </p>
+
+            <div class="equation">
+                <code>
+                    G = (V, E, W)
+                </code>
+            </div>
+
+            <p>
+                where:
+            </p>
+
+            <ul>
+                <li><strong>V</strong> represents nodes or components;</li>
+                <li><strong>E</strong> represents relationships between nodes;</li>
+                <li><strong>W</strong> represents relationship weights.</li>
+            </ul>
+
+            <p>
+                The graph is not necessarily static.
+            </p>
+
+            <div class="equation">
+                <code>
+                    G<sub>t</sub> → G<sub>t+1</sub>
+                </code>
+            </div>
+
+            <p>
+                New relationships can appear, existing relationships can
+                strengthen or weaken, and components can change their
+                position within the network.
+            </p>
+
+        </section>
+
+
+        <!-- EVOLVING RELATIONSHIPS -->
+
+        <section>
+
+            <h2>4. Evolving Relational Structure</h2>
+
+            <p>
+                A central feature of the framework is that relationships
+                themselves participate in system dynamics.
+            </p>
+
+            <div class="equation">
+                <code>
+                    R<sub>t+1</sub> =
+                    G(R<sub>t</sub>, X<sub>t</sub>, C<sub>t</sub>)
+                </code>
+            </div>
+
+            <p>
+                This creates a feedback relationship between system state
+                and network structure.
+            </p>
+
+            <p>
+                The system therefore does not simply operate on a fixed
+                network. Its interactions may alter the network through
+                which future interactions occur.
+            </p>
+
+        </section>
+
+
+        <!-- EMERGENT INTELLIGENCE -->
+
+        <section>
+
+            <h2>5. Emergent Intelligence</h2>
+
+            <p>
+                The framework proposes three conceptually distinct sources
+                of system-level intelligence:
+            </p>
+
+            <div class="equation">
+                <code>
+                    I<sub>system</sub> =
+                    ΣI<sub>i</sub> +
+                    I<sub>relations</sub> +
+                    I<sub>emergence</sub>
+                </code>
+            </div>
+
+            <div class="definition">
+
+                <strong>Component intelligence</strong>
+
+                <p>
+                    Intelligence associated with individual nodes or
+                    components.
+                </p>
+
+            </div>
+
+            <div class="definition">
+
+                <strong>Relational intelligence</strong>
+
+                <p>
+                    Information and structure represented by relationships
+                    among components.
+                </p>
+
+            </div>
+
+            <div class="definition">
+
+                <strong>Emergent intelligence</strong>
+
+                <p>
+                    System-level properties arising through interaction
+                    among components and relationships.
+                </p>
+
+            </div>
+
+            <p>
+                The third term is especially important because emergence
+                cannot be assumed merely from the existence of many
+                components. It requires investigation of the interaction
+                structure that produces system-level behaviour.
+            </p>
+
+        </section>
+
+
+        <!-- DISTRIBUTED INTELLIGENCE -->
+
+        <section>
+
+            <h2>6. Distributed Intelligence</h2>
+
+            <p>
+                In a distributed intelligence system, no single component
+                necessarily contains the complete information required to
+                describe the behaviour of the entire system.
+            </p>
+
+            <p>
+                Information can instead be distributed across nodes,
+                relationships and environmental structures.
+            </p>
+
+            <div class="principle">
+                Intelligence can be distributed across the system,
+                rather than concentrated in a single node.
+            </div>
+
+            <p>
+                This provides a conceptual connection between living
+                intelligence, distributed cognition, multi-agent systems,
+                network science and adaptive environments.
+            </p>
+
+        </section>
+
+
+        <!-- INFORMATION FLOW -->
+
+        <section>
+
+            <h2>7. Information Flow</h2>
+
+            <p>
+                Intelligence within a network depends partly upon how
+                information moves through relationships.
+            </p>
+
+            <div class="equation">
+                <code>
+                    Node → Relationship → Node → State Change
+                </code>
+            </div>
+
+            <p>
+                As information moves through the network, it can modify
+                states and relationships.
+            </p>
+
+            <div class="equation">
+                <code>
+                    Information →
+                    Interaction →
+                    Transformation →
+                    Memory →
+                    Future Interaction
+                </code>
+            </div>
+
+            <p>
+                This creates a temporal feedback loop rather than a simple
+                one-way information pipeline.
+            </p>
+
+        </section>
+
+
+        <!-- MEMORY -->
+
+        <section>
+
+            <h2>8. Network Memory</h2>
+
+            <p>
+                Memory within a living intelligence system may exist at
+                multiple levels.
+            </p>
+
+            <ul>
+                <li>Memory within individual components;</li>
+                <li>Memory represented by persistent relationships;</li>
+                <li>Memory encoded within network structure;</li>
+                <li>Memory represented by environmental changes.</li>
+            </ul>
+
+            <p>
+                A network may therefore retain traces of previous
+                interactions even when those interactions are no longer
+                occurring directly.
+            </p>
+
+            <div class="equation">
+                <code>
+                    M<sub>system,t+1</sub> =
+                    H(M<sub>system,t</sub>, R<sub>t</sub>, X<sub>t</sub>)
+                </code>
+            </div>
+
+        </section>
+
+
+        <!-- BIOLOGICAL -->
+
+        <section>
+
+            <h2>9. Biological Systems</h2>
+
+            <p>
+                Biological systems provide an important domain for studying
+                distributed and relational intelligence.
+            </p>
+
+            <p>
+                Cells, organisms, ecological systems and biological
+                communities involve interacting components whose behaviour
+                is influenced by relationships and environmental conditions.
+            </p>
+
+            <p>
+                The Living Intelligence Systems framework does not assume
+                that biological systems satisfy a particular definition of
+                intelligence. Instead, it proposes them as possible domains
+                in which relational and emergent processes can be studied.
+            </p>
+
+        </section>
+
+
+        <!-- SOCIAL -->
+
+        <section>
+
+            <h2>10. Social and Organizational Systems</h2>
+
+            <p>
+                Human groups and organizations can also be represented as
+                evolving relational networks.
+            </p>
+
+            <p>
+                Individuals, institutions, resources, information and
+                decisions can form changing structures of interaction.
+            </p>
+
+            <div class="equation">
+                <code>
+                    G<sub>social,t</sub> →
+                    G<sub>social,t+1</sub>
+                </code>
+            </div>
+
+            <p>
+                The research question is whether system-level coordination
+                and adaptation can be partly explained through the evolving
+                relational structure.
+            </p>
+
+        </section>
+
+
+        <!-- RESONANCE -->
+
+        <section>
+
+            <h2>11. Resonance Across Networks</h2>
+
+            <p>
+                Resonance Transformation Theory provides a mechanism through
+                which relational alignment can be investigated within
+                evolving networks.
+            </p>
+
+            <div class="equation">
+                <code>
+                    ρ(t) = Alignment(R(t), C(t))
+                </code>
+            </div>
+
+            <p>
+                A proposed transformation relationship is:
+            </p>
+
+            <div class="equation">
+                <code>
+                    X<sub>t+1</sub> =
+                    X<sub>t</sub> +
+                    αρ<sub>t</sub>R<sub>t</sub> +
+                    βC<sub>t</sub> +
+                    ε<sub>t</sub>
+                </code>
+            </div>
+
+            <p>
+                Within the living-systems framework, the resonance variable
+                may therefore become a possible bridge between network
+                structure and system transformation.
+            </p>
+
+        </section>
+
+
+        <!-- LIVING LOOP -->
+
+        <section>
+
+            <h2>12. The Living Intelligence Loop</h2>
+
+            <div class="principle">
+                Environment → Interaction → Relationship →
+                Resonance → Transformation → Memory →
+                New Environment
+            </div>
+
+            <p>
+                The system continuously modifies the conditions under which
+                future interactions occur.
+            </p>
+
+            <p>
+                This produces a feedback architecture in which intelligence
+                is investigated as an evolving process rather than a fixed
+                property.
+            </p>
+
+        </section>
+
+
+        <!-- SCALE -->
+
+        <section>
+
+            <h2>13. Intelligence Across Scales</h2>
+
+            <p>
+                The proposed framework can be examined at multiple levels.
+            </p>
+
+            <ul>
+                <li>Individual components</li>
+                <li>Small interacting groups</li>
+                <li>Organizations</li>
+                <li>Biological networks</li>
+                <li>Learning environments</li>
+                <li>Distributed technological systems</li>
+                <li>Communities</li>
+                <li>Civilizational systems</li>
+            </ul>
+
+            <p>
+                The scale of analysis changes, but the underlying question
+                remains whether relationships and interactions contribute
+                measurable properties beyond isolated components.
+            </p>
+
+        </section>
+
+
+        <!-- CIVILIZATIONAL -->
+
+        <section>
+
+            <h2>14. Civilizational Intelligence</h2>
+
+            <p>
+                At larger scales, the framework proposes investigating
+                intelligence as a property of interconnected social,
+                technological, ecological and institutional systems.
+            </p>
+
+            <p>
+                A civilizational system may contain many distinct
+                subsystems whose relationships influence information flow,
+                coordination and adaptation.
+            </p>
+
+            <div class="equation">
+                <code>
+                    I<sub>civilization</sub> =
+                    Φ(I<sub>individual</sub>,
+                    I<sub>relations</sub>,
+                    I<sub>institutions</sub>,
+                    I<sub>environment</sub>)
+                </code>
+            </div>
+
+            <p>
+                This is a proposed abstraction for research rather than a
+                claim that civilization possesses a single measurable
+                intelligence value.
+            </p>
+
+        </section>
+
+
+        <!-- EXPERIMENTAL QUESTION -->
+
+        <section>
+
+            <h2>15. Experimental Question</h2>
+
+            <div class="hypothesis">
+
+                <p>
+                    Can a system containing relational memory and evolving
+                    network structure predict or adapt to future states
+                    better than a comparable system that treats interactions
+                    as independent transactions?
+                </p>
+
+                <div class="equation">
+                    <code>
+                        I(X<sub>t+1</sub>;
+                        R<sub>t</sub>, M<sub>t</sub>
+                        |
+                        X<sub>t</sub>) &gt; 0
+                    </code>
+                </div>
+
+                <p>
+                    Conditional mutual information provides one possible
+                    empirical test of whether relational and memory
+                    variables contain information about future system states
+                    beyond the current state.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPERIMENTAL PROGRAMME -->
+
+        <section>
+
+            <h2>16. Proposed Experimental Programme</h2>
+
+            <h3>Model A — Independent Components</h3>
+
+            <div class="equation">
+                <code>
+                    X<sub>i,t+1</sub> = F(X<sub>i,t</sub>)
+                </code>
+            </div>
+
+            <p>
+                Components are modelled primarily through their individual
+                states.
+            </p>
+
+            <h3>Model B — Connected Components</h3>
+
+            <div class="equation">
+                <code>
+                    X<sub>i,t+1</sub> =
+                    F(X<sub>i,t</sub>, R<sub>i,t</sub>)
+                </code>
+            </div>
+
+            <p>
+                Relational information is introduced.
+            </p>
+
+            <h3>Model C — Living Network</h3>
+
+            <div class="equation">
+                <code>
+                    S<sub>t+1</sub> =
+                    F(X<sub>t</sub>, R<sub>t</sub>,
+                    M<sub>t</sub>, C<sub>t</sub>,
+                    A<sub>t</sub>, ρ<sub>t</sub>)
+                </code>
+            </div>
+
+            <p>
+                The complete evolving system includes relational structure,
+                memory, context, agency and proposed resonance.
+            </p>
+
+            <p>
+                Comparative evaluation can then investigate predictive
+                accuracy, adaptation, coordination, stability or other
+                pre-defined measures appropriate to the experimental domain.
+            </p>
+
+        </section>
+
+
+        <!-- EMERGENCE -->
+
+        <section>
+
+            <h2>17. Emergence as a Research Problem</h2>
+
+            <p>
+                Emergence should not be treated as an explanation by itself.
+            </p>
+
+            <p>
+                A system-level property should be connected to measurable
+                interactions, dynamics or structural changes wherever
+                possible.
+            </p>
+
+            <p>
+                The framework therefore asks:
+            </p>
+
+            <div class="principle">
+                Which system properties cannot be adequately explained
+                by examining isolated components alone?
+            </div>
+
+            <p>
+                This converts emergence from a descriptive label into a
+                potential empirical research problem.
+            </p>
+
+        </section>
+
+
+        <!-- ANUMA LEARNING STATION -->
+
+        <section>
+
+            <h2>18. Anuma Learning Station</h2>
+
+            <p>
+                The Anuma Learning Station provides a physical experimental
+                environment for investigating the framework.
+            </p>
+
+            <p>
+                Its proposed architecture follows:
+            </p>
+
+            <div class="principle">
+                Environment → Sensing → Context → Relationship →
+                Resonance → Transformation → Memory
+            </div>
+
+            <p>
+                Environmental and interaction signals can therefore be
+                treated as observations within an evolving system rather
+                than as isolated measurements alone.
+            </p>
+
+            <p>
+                The Learning Station represents a potential bridge between
+                mathematical modelling and physical experimentation.
+            </p>
+
+        </section>
+
+
+        <!-- DISTRIBUTED ARCHITECTURE -->
+
+        <section>
+
+            <h2>19. Distributed Living Intelligence</h2>
+
+            <p>
+                A distributed implementation may consist of multiple local
+                intelligent nodes.
+            </p>
+
+            <div class="equation">
+                <code>
+                    Node<sub>1</sub> ↔ Node<sub>2</sub> ↔
+                    Node<sub>3</sub> ↔ ... ↔ Node<sub>n</sub>
+                </code>
+            </div>
+
+            <p>
+                Each node can maintain local observations while the network
+                provides relational structure connecting those observations.
+            </p>
+
+            <p>
+                This architecture permits investigation of intelligence
+                without requiring all computation or information to be
+                concentrated in a single central system.
+            </p>
+
+        </section>
+
+
+        <!-- SCIENTIFIC POSITIONING -->
+
+        <section>
+
+            <h2>20. Scientific Positioning</h2>
+
+            <div class="definition">
+
+                <strong>Established scientific foundations</strong>
+
+                <p>
+                    The framework connects with established research areas
+                    including network science, complex systems, information
+                    theory, distributed cognition, multi-agent systems,
+                    dynamical systems and machine learning.
+                </p>
+
+            </div>
+
+            <div class="definition">
+
+                <strong>Proposed framework</strong>
+
+                <p>
+                    Living Intelligence Systems and the proposed decomposition
+                    into component, relational and emergent intelligence are
+                    elements of the ANUMA research programme.
+                </p>
+
+            </div>
+
+            <div class="definition">
+
+                <strong>Testable hypotheses</strong>
+
+                <p>
+                    Whether relationships and network dynamics produce
+                    measurable predictive, adaptive or emergent advantages
+                    remains an empirical question.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- OPEN QUESTIONS -->
+
+        <section>
+
+            <h2>21. Open Research Questions</h2>
+
+            <ul>
+
+                <li>
+                    How should relational intelligence be measured at the
+                    network level?
+                </li>
+
+                <li>
+                    How can emergent intelligence be distinguished from
+                    aggregated component intelligence?
+                </li>
+
+                <li>
+                    What network structures produce persistent adaptive
+                    behaviour?
+                </li>
+
+                <li>
+                    How does memory become distributed across a network?
+                </li>
+
+                <li>
+                    Can local intelligent nodes produce measurable
+                    system-level intelligence?
+                </li>
+
+                <li>
+                    How does resonance influence evolving network states?
+                </li>
+
+                <li>
+                    Can living intelligence be investigated consistently
+                    across biological, technological and social systems?
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- CONCLUSION -->
+
+        <section>
+
+            <h2>22. Conclusion</h2>
+
+            <p>
+                Living Intelligence Systems extends the ANUMA research
+                programme from individual system dynamics toward networks,
+                distributed intelligence and emergence.
+            </p>
+
+            <p>
+                Its central proposition is that a system may contain
+                intelligence not only within its individual components but
+                also within the relationships connecting those components
+                and within the emergent dynamics generated by their
+                interaction.
+            </p>
+
+            <div class="principle">
+                Components + Relationships + Interaction →
+                System-Level Intelligence
+            </div>
+
+            <p>
+                The mathematical formulation remains a proposed research
+                abstraction. Its scientific value depends on operational
+                definitions, controlled experiments, measurable variables
+                and reproducible results.
+            </p>
+
+            <p>
+                The resulting research direction is therefore to move from
+                isolated computation toward the empirical investigation of
+                evolving relational systems.
+            </p>
+
+        </section>
+
+
+        <!-- CITATION -->
+
+        <section>
+
+            <h2>23. Citation</h2>
+
+            <div class="citation-box">
+
+                <p>
+                    <strong>Suggested citation:</strong>
+                </p>
+
+                <p>
+                    Adegunloye Esan, Sean.
+                    <em>Living Intelligence Systems.</em>
+                    ANUMA Independent Research Core.
+                    ANUMA Research Archive.
+                </p>
+
+                <p>
+                    Research ID: ANUMA-LIS-004
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- RELATED -->
+
+        <section>
+
+            <h2>24. Related Research</h2>
+
+            <p>
+                This publication forms part of the wider ANUMA research
+                programme.
+            </p>
+
+            <div class="related-links">
+
+                <a href="../transactional-relational-intelligence/">
+                    Transactional–Relational Intelligence
+                </a>
+
+                <a href="../resonance-transformation-theory/">
+                    Resonance Transformation Theory
+                </a>
+
+                <a href="../existential-intelligence/">
+                    Existential Intelligence
+                </a>
+
+                <a href="../../transactional-relational/">
+                    Transactional–Relational Research
+                </a>
+
+                <a href="../../living-intelligence/">
+                    Living Intelligence Research
+                </a>
+
+                <a href="../../programme/">
+                    Research Programme
+                </a>
+
+                <a href="../../../prototypes/anuma-learning-station/">
+                    Anuma Learning Station
+                </a>
+
+                <a href="../../../core/ANUMA-RTT-001.html">
+                    Research Core
+                </a>
+
+            </div>
+
+        </section>
+
+    </article>
+
+</main>
+
+
+<footer class="paper-footer">
+
+    <p>
+        ANUMA Independent Research Core
+    </p>
+
+    <p>
+        Independent research identity · Network intelligence ·
+        Emergence · Distributed systems
+    </p>
+
+</footer>
+
+</body>
+</html>
